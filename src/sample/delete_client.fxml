@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" style="-fx-background-color: #D0D0D0;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.DeleteClientController">
+   <children>
+      <JFXTextField alignment="CENTER" labelFloat="true" layoutX="363.0" layoutY="165.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="350.0" promptText="Enter ID_Card Number">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton layoutX="424.0" layoutY="362.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="250.0" styleClass="loginBtu" stylesheets="@styelsheet.css" text="Delete">
+         <font>
+            <Font name="Arial Bold" size="22.0" />
+         </font>
+      </JFXButton>
+      <Pane layoutX="-2.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" opacity="0.76" prefHeight="600.0" prefWidth="250.0" style="-fx-background-color: #543FEF;">
+         <children>
+            <JFXButton layoutY="2.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#transfertoAdd" prefHeight="90.0" prefWidth="250.0" text="Add" wrapText="true">
+               <font>
+                  <Font name="Arial Bold" size="35.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutY="100.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="90.0" prefWidth="250.0" text="Delete" wrapText="true">
+               <font>
+                  <Font name="Arial Bold" size="35.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutY="190.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#transfertoedit" prefHeight="90.0" prefWidth="250.0" text="Edit" wrapText="true">
+               <font>
+                  <Font name="Arial Bold" size="35.0" />
+               </font>
+            </JFXButton>
+            <JFXButton alignment="CENTER" layoutY="500.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#BackMainStage" prefHeight="100.0" prefWidth="125.0" text=" " textAlignment="CENTER">
+               <graphic>
+                  <ImageView disable="true" fitHeight="90.0" fitWidth="95.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/if_arrow-back_216437.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton layoutX="125.0" layoutY="500.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#logoutfromaccount" prefHeight="100.0" prefWidth="125.0" text=" " />
+            <ImageView disable="true" fitHeight="81.0" fitWidth="74.0" layoutX="145.0" layoutY="513.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/if_log-out_3324993.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <ImageView fitHeight="22.0" fitWidth="21.0" layoutX="967.0" layoutY="11.0" onMouseClicked="#close_app" pickOnBounds="true" preserveRatio="true" styleClass="image_icon">
+         <image>
+            <Image url="@../image/if_icons_exit_1564505.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

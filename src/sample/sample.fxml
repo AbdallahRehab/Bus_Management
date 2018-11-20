@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXToggleButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="500.0" style="-fx-background-color: #543FEF;" styleClass="image_icon" stylesheets="@styelsheet.css">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" opacity="0.95" pickOnBounds="true" smooth="false" style="-fx-border-radius: 50;">
+               <image>
+                  <Image url="@../image/whatsapp.jpeg" />
+               </image>
+            </ImageView>
+            <Label text="Welcome To" textFill="WHITE">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Wingdings" size="16.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Label>
+            <Label text="luxury bus services" textFill="#d0d0d0">
+               <font>
+                  <Font name="Microsoft YaHei Bold" size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <Pane fx:id="controlarea" layoutX="500.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="500.0" stylesheets="@styelsheet.css">
+         <children>
+            <Label layoutX="73.0" layoutY="104.0" prefHeight="36.0" prefWidth="143.0" text="Welcome Back,">
+               <font>
+                  <Font name="MS Reference Specialty" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="73.0" layoutY="150.0" prefHeight="36.0" prefWidth="180.0" text="Sign In to contiune" textFill="#ababab">
+               <font>
+                  <Font name="Gabriola" size="25.0" />
+               </font>
+            </Label>
+            <Label layoutX="283.0" layoutY="360.0" styleClass="forgetBtn" text="Forget password?" textFill="#777c71">
+               <font>
+                  <Font name="MS Outlook" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="221.0" layoutY="494.0" prefHeight="15.0" prefWidth="64.0" text="New User?" textFill="#777c71">
+               <font>
+                  <Font name="MS Outlook" size="12.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </opaqueInsets>
+            </Label>
+            <Label layoutX="227.0" layoutY="517.0" onMouseClicked="#open_registraion" text="SignUp" textFill="#24599e">
+               <font>
+                  <Font name="Segoe UI Black" size="12.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <opaqueInsets>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </opaqueInsets>
+            </Label>
+            <JFXTextField focusColor="#543fef" labelFloat="true" layoutX="127.0" layoutY="238.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="250.0" promptText="Email">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXTextField>
+            <JFXPasswordField focusColor="#543fef" labelFloat="true" layoutX="128.0" layoutY="310.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="250.0" promptText="Password">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXPasswordField>
+            <JFXButton layoutX="127.0" layoutY="424.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#loginUser" prefHeight="50.0" prefWidth="250.0" styleClass="loginBtu" stylesheets="@styelsheet.css" text="Login">
+               <font>
+                  <Font name="Microsoft Tai Le Bold" size="16.0" />
+               </font>
+            </JFXButton>
+            <ImageView fitHeight="22.0" fitWidth="21.0" layoutX="466.0" layoutY="10.0" onMouseClicked="#close_app" pickOnBounds="true" preserveRatio="true" styleClass="image_icon">
+               <image>
+                  <Image url="@../image/if_icons_exit_1564505.png" />
+               </image>
+            </ImageView>
+            <JFXToggleButton layoutX="80.0" layoutY="517.0" onAction="#loginmanger" text="Manger" toggleColor="#6faea7" toggleLineColor="#566aeb">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXToggleButton>
+            <Label layoutX="47.0" layoutY="538.0" prefHeight="17.0" prefWidth="33.0" text="User" textFill="#999999">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+         </children></Pane>
+   </children>
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </padding>
+</AnchorPane>

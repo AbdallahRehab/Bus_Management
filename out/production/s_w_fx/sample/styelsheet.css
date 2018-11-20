@@ -1,0 +1,54 @@
+.parent{
+    -fx-background-color: white;
+}
+.image_icon{
+    -fx-margin: 5px;
+}
+.forgetBtn{
+    -fx-text-fill: #777c71;
+
+}
+
+.forgetBtn:hover{
+    -fx-text-fill:blue;
+    -fx-underline: true;
+}
+.forgetBtnman{
+    -fx-text-fill: #d0d0d0;
+
+}
+
+.forgetBtnman:hover{
+    -fx-text-fill:#71c7ef;
+    -fx-underline: true;
+}
+.loginBtu{
+    -fx-background-color:  #543FEF;
+    -fx-text-fill: #ffffff;
+    -fx-background-radius: 10px;
+}
+
+.loginBtu:hover{
+    -fx-background-color: transparent;
+    -fx-background-radius: 10px;
+    -fx-text-fill:  #543FEF;
+    -fx-border-color: #777c71;
+    -fx-border-width: 1px;
+    -fx-border-style: solid;
+    -fx-border-radius: 7px;
+}
+.loginBtuManger{
+    -fx-background-color: #9ca5a7;
+    -fx-text-fill: #ffffff;
+    -fx-background-radius: 10px;
+}
+
+.loginBtuManger:hover{
+    -fx-background-color: transparent;
+    -fx-background-radius: 10px;
+    -fx-text-fill: #71c7ef;
+    -fx-border-color: #9c8e63;
+    -fx-border-width: 1px;
+    -fx-border-style: solid;
+    -fx-border-radius: 7px;
+}

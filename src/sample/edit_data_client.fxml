@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXTimePicker?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" style="-fx-background-color: #D0D0D0;" stylesheets="@styelsheet.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.EditDataClientController">
+   <children>
+      <JFXComboBox focusColor="#543fef" labelFloat="true" layoutX="399.0" layoutY="183.0" prefHeight="38.0" prefWidth="166.0" promptText="Select Source" />
+      <JFXTextField focusColor="#543fef" labelFloat="true" layoutX="528.0" layoutY="32.0" prefHeight="38.0" prefWidth="166.0" promptText="ID_Card Number">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField focusColor="#543fef" labelFloat="true" layoutX="472.0" layoutY="125.0" prefHeight="38.0" prefWidth="330.0" promptText="UserName">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXTextField>
+      <JFXComboBox focusColor="#543fef" labelFloat="true" layoutX="718.0" layoutY="186.0" prefHeight="38.0" prefWidth="166.0" promptText="Select destination" />
+      <DatePicker layoutX="395.0" layoutY="243.0" opacity="0.85" prefHeight="38.0" prefWidth="174.0" promptText="Select Date " />
+      <JFXTimePicker defaultColor="#543fef" layoutX="716.0" layoutY="241.0" prefHeight="38.0" prefWidth="171.0" />
+      <JFXButton layoutX="777.0" layoutY="541.0" prefHeight="38.0" prefWidth="91.0" styleClass="loginBtu" stylesheets="@styelsheet.css" text="Update">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXButton>
+      <Pane layoutX="304.0" layoutY="310.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="225.0" prefWidth="600.0" style="-fx-background-color: #454141;">
+         <children>
+            <GridPane layoutY="-1.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="225.0" prefWidth="600.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="295.0" minWidth="10.0" prefWidth="74.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="295.0" minWidth="10.0" prefWidth="75.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="295.0" minWidth="10.0" prefWidth="72.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="295.0" minWidth="10.0" prefWidth="66.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="295.0" minWidth="10.0" prefWidth="65.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="295.0" minWidth="9.0" prefWidth="65.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="295.0" minWidth="10.0" prefWidth="62.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="295.0" minWidth="0.0" prefWidth="0.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="350.0" minWidth="10.0" prefWidth="67.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="588.0" minWidth="10.0" prefWidth="62.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <JFXButton prefHeight="56.0" prefWidth="73.0" style="-fx-background-color: #543FEF;" text="22" GridPane.columnIndex="8">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton prefHeight="56.0" prefWidth="73.0" style="-fx-background-color: #543FEF;" text="4" GridPane.columnIndex="1">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton prefHeight="56.0" prefWidth="73.0" style="-fx-background-color: #543FEF;" text="7" GridPane.columnIndex="2">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton prefHeight="56.0" prefWidth="73.0" style="-fx-background-color: #543FEF;" text="10" GridPane.columnIndex="3">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton prefHeight="56.0" prefWidth="73.0" style="-fx-background-color: #543FEF;" text="13" GridPane.columnIndex="4">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton prefHeight="56.0" prefWidth="73.0" style="-fx-background-color: #543FEF;" text="19" GridPane.columnIndex="6">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton prefHeight="56.0" prefWidth="73.0" style="-fx-background-color: #543FEF;" text="16" GridPane.columnIndex="5">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton prefHeight="56.0" prefWidth="73.0" style="-fx-background-color: #543FEF;" text="8" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton prefHeight="56.0" prefWidth="73.0" style="-fx-background-color: #543FEF;" text="25" GridPane.columnIndex="9">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton prefHeight="56.0" prefWidth="73.0" style="-fx-background-color: #543FEF;" text="2" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton prefHeight="56.0" prefWidth="73.0" style="-fx-background-color: #543FEF;" text="5" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton prefHeight="56.0" prefWidth="73.0" style="-fx-background-color: #543FEF;" text="1">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton prefHeight="56.0" prefWidth="73.0" style="-fx-background-color: #543FEF;" text="11" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton prefHeight="56.0" prefWidth="73.0" style="-fx-background-color: #543FEF;" text="14" GridPane.columnIndex="4" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton prefHeight="56.0" prefWidth="73.0" style="-fx-background-color: #543FEF;" text="17" GridPane.columnIndex="5" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton prefHeight="56.0" prefWidth="73.0" style="-fx-background-color: #543FEF;" text="20" GridPane.columnIndex="6" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton prefHeight="56.0" prefWidth="73.0" style="-fx-background-color: #543FEF;" text="23" GridPane.columnIndex="8" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton prefHeight="56.0" prefWidth="73.0" style="-fx-background-color: #543FEF;" text="26" GridPane.columnIndex="9" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton prefHeight="56.0" prefWidth="73.0" style="-fx-background-color: #543FEF;" text="3" GridPane.rowIndex="3">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton prefHeight="56.0" prefWidth="73.0" style="-fx-background-color: #543FEF;" text="6" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton prefHeight="56.0" prefWidth="73.0" style="-fx-background-color: #543FEF;" text="9" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton prefHeight="56.0" prefWidth="73.0" style="-fx-background-color: #543FEF;" text="12" GridPane.columnIndex="3" GridPane.rowIndex="3">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton prefHeight="56.0" prefWidth="73.0" style="-fx-background-color: #543FEF;" text="15" GridPane.columnIndex="4" GridPane.rowIndex="3">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton prefHeight="56.0" prefWidth="73.0" style="-fx-background-color: #543FEF;" text="18" GridPane.columnIndex="5" GridPane.rowIndex="3">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton prefHeight="56.0" prefWidth="73.0" style="-fx-background-color: #543FEF;" text="21" GridPane.columnIndex="6" GridPane.rowIndex="3">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton prefHeight="56.0" prefWidth="73.0" style="-fx-background-color: #543FEF;" text="24" GridPane.columnIndex="8" GridPane.rowIndex="3">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton prefHeight="56.0" prefWidth="73.0" style="-fx-background-color: #543FEF;" text="27" GridPane.columnIndex="9" GridPane.rowIndex="3">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </GridPane>
+         </children>
+      </Pane>
+      <Pane layoutX="-2.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" opacity="0.76" prefHeight="600.0" prefWidth="250.0" style="-fx-background-color: #543FEF;">
+         <children>
+            <JFXButton layoutY="2.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#transfertoadd" prefHeight="90.0" prefWidth="250.0" text="Add" wrapText="true">
+               <font>
+                  <Font name="Arial Bold" size="35.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutY="100.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#transfertodelete" prefHeight="90.0" prefWidth="250.0" text="Delete" wrapText="true">
+               <font>
+                  <Font name="Arial Bold" size="35.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutY="190.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="90.0" prefWidth="250.0" text="Edit" wrapText="true">
+               <font>
+                  <Font name="Arial Bold" size="35.0" />
+               </font>
+            </JFXButton>
+            <JFXButton alignment="CENTER" layoutY="500.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#BackMainStage" prefHeight="100.0" prefWidth="125.0" text=" " textAlignment="CENTER">
+               <graphic>
+                  <ImageView disable="true" fitHeight="90.0" fitWidth="95.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/if_arrow-back_216437.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton layoutX="125.0" layoutY="500.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#logoutfromaccount" prefHeight="100.0" prefWidth="125.0" text=" " />
+            <ImageView disable="true" fitHeight="81.0" fitWidth="74.0" layoutX="145.0" layoutY="513.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/if_log-out_3324993.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <JFXButton layoutX="724.0" layoutY="33.0" prefHeight="38.0" prefWidth="74.0" styleClass="loginBtu" stylesheets="@styelsheet.css" text="Search">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXButton>
+      <ImageView fitHeight="38.0" fitWidth="44.0" layoutX="481.0" layoutY="37.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/if_67_111124.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="22.0" fitWidth="21.0" layoutX="968.0" layoutY="11.0" onMouseClicked="#close_app" pickOnBounds="true" preserveRatio="true" styleClass="image_icon">
+         <image>
+            <Image url="@../image/if_icons_exit_1564505.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
