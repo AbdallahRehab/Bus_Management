@@ -56,7 +56,7 @@ public class AddClientController implements Initializable {
 
 
     }
-
+ /* abdalla */
     public void transfertodelete(ActionEvent actionEvent) {
         firstpagetouser.Addtrip.close();
         firstpagetouser.DeleteStage.show();
