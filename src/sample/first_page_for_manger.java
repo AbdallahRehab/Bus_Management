@@ -15,8 +15,42 @@ import java.util.ResourceBundle;
 
 public class first_page_for_manger implements Initializable {
     public static Stage bus_and_place_stage;
+    public static Stage allEmployees_in_system_FAdd_stage;
+    public static Stage delete_employees_Stage;
+    public static Stage edit_employees_Stage;
+
     @Override
     public void initialize(URL location, ResourceBundle resources) {
+        try {
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("employees.fxml"));
+            Parent root1 = (Parent) fxmlLoader.load();
+            Stage stage = new Stage();
+            stage.initStyle(StageStyle.UNDECORATED);
+            stage.setScene(new Scene(root1));
+           allEmployees_in_system_FAdd_stage = stage;
+        }catch (Exception e){
+            System.out.println("cant load frame allemployees");
+        }
+        try {
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("delete_employees.fxml"));
+            Parent root1 = (Parent) fxmlLoader.load();
+            Stage stage = new Stage();
+            stage.initStyle(StageStyle.UNDECORATED);
+            stage.setScene(new Scene(root1));
+            delete_employees_Stage = stage;
+        } catch (Exception e) {
+
+        }
+        try {
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("eidt_employees.fxml"));
+            Parent root1 = (Parent) fxmlLoader.load();
+            Stage stage = new Stage();
+            stage.initStyle(StageStyle.UNDECORATED);
+            stage.setScene(new Scene(root1));
+            edit_employees_Stage = stage;
+        } catch (Exception e) {
+
+        }
 
     }
 
@@ -32,11 +66,17 @@ public class first_page_for_manger implements Initializable {
             signInmanger.firstpage_formanger.close();
             bus_and_place_stage.show();
         }catch (Exception e){
-            System.out.println("cant load frame registrationStageManger");
+            System.out.println("cant load frame bus and place");
         }
     }
 
     public void close_app(MouseEvent mouseEvent) {
         Platform.exit();
+    }
+
+    public void allEmployees_add_delete_update(ActionEvent actionEvent) {
+            signInmanger.firstpage_formanger.close();
+            allEmployees_in_system_FAdd_stage.show();
+
     }
 }
