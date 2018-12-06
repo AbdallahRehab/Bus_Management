@@ -11,7 +11,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" style="-fx-background-color: #D0D0D0;" stylesheets="@styelsheet.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.employees">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" style="-fx-background-color: #D0D0D0;" stylesheets="@../sample/styelsheet.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.employees">
    <children>
       <JFXTextField focusColor="#543fef" labelFloat="true" layoutX="685.0" layoutY="70.0" prefHeight="38.0" prefWidth="243.0" promptText="ID_Card Number">
          <font>
@@ -23,7 +23,7 @@
             <Font name="System Bold" size="16.0" />
          </font>
       </JFXTextField>
-      <JFXButton layoutX="777.0" layoutY="523.0" onAction="#submitblock" prefHeight="38.0" prefWidth="91.0" styleClass="loginBtu" stylesheets="@styelsheet.css" text="Submit">
+      <JFXButton layoutX="777.0" layoutY="523.0" onAction="#submitblock" prefHeight="38.0" prefWidth="91.0" styleClass="loginBtu" stylesheets="@../sample/styelsheet.css" text="Submit">
          <font>
             <Font name="System Bold" size="16.0" />
          </font>

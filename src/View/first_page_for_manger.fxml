@@ -17,7 +17,7 @@
                   <Font name="System Bold" size="25.0" />
                </font>
             </Label>
-            <JFXButton layoutX="17.0" layoutY="214.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#Buses_and_place_for_manger" prefHeight="200.0" prefWidth="225.0" styleClass="loginBtu" stylesheets="@styelsheet.css" text=" ">
+            <JFXButton layoutX="17.0" layoutY="214.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#Buses_and_place_for_manger" prefHeight="200.0" prefWidth="225.0" styleClass="loginBtu" stylesheets="@../sample/styelsheet.css" text=" ">
                <font>
                   <Font name="Microsoft Tai Le Bold" size="20.0" />
                </font>
@@ -32,7 +32,7 @@
                   <Font name="System Bold" size="25.0" />
                </font>
             </Label>
-            <JFXButton layoutX="266.0" layoutY="214.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="225.0" styleClass="loginBtu" stylesheets="@styelsheet.css" text=" ">
+            <JFXButton layoutX="266.0" layoutY="214.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="225.0" styleClass="loginBtu" stylesheets="@../sample/styelsheet.css" text=" ">
                <font>
                   <Font name="Microsoft Tai Le Bold" size="20.0" />
                </font>
@@ -47,7 +47,7 @@
                   <Font name="System Bold" size="25.0" />
                </font>
             </Label>
-            <JFXButton layoutX="763.0" layoutY="214.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="225.0" styleClass="loginBtu" stylesheets="@styelsheet.css" text=" ">
+            <JFXButton layoutX="763.0" layoutY="214.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="225.0" styleClass="loginBtu" stylesheets="@../sample/styelsheet.css" text=" ">
                <font>
                   <Font name="Microsoft Tai Le Bold" size="20.0" />
                </font>
@@ -62,7 +62,7 @@
                   <Font name="System Bold" size="25.0" />
                </font>
             </Label>
-            <JFXButton layoutX="517.0" layoutY="214.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#allEmployees_add_delete_update" prefHeight="200.0" prefWidth="225.0" styleClass="loginBtu" stylesheets="@styelsheet.css" text=" ">
+            <JFXButton layoutX="517.0" layoutY="214.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#allEmployees_add_delete_update" prefHeight="200.0" prefWidth="225.0" styleClass="loginBtu" stylesheets="@../sample/styelsheet.css" text=" ">
                <font>
                   <Font name="Microsoft Tai Le Bold" size="20.0" />
                </font>
