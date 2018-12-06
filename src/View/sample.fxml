@@ -17,7 +17,7 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
    <children>
-      <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="500.0" style="-fx-background-color: #543FEF;" styleClass="image_icon" stylesheets="@styelsheet.css">
+      <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="500.0" style="-fx-background-color: #543FEF;" styleClass="image_icon" stylesheets="@../sample/styelsheet.css">
          <children>
             <ImageView fitHeight="150.0" fitWidth="200.0" opacity="0.95" pickOnBounds="true" smooth="false" style="-fx-border-radius: 50;">
                <image>
@@ -42,7 +42,7 @@
             </Label>
          </children>
       </VBox>
-      <Pane fx:id="controlarea" layoutX="500.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="500.0" stylesheets="@styelsheet.css">
+      <Pane fx:id="controlarea" layoutX="500.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="500.0" stylesheets="@../sample/styelsheet.css">
          <children>
             <Label layoutX="73.0" layoutY="104.0" prefHeight="36.0" prefWidth="143.0" text="Welcome Back,">
                <font>
@@ -88,7 +88,7 @@
                   <Font size="14.0" />
                </font>
             </JFXPasswordField>
-            <JFXButton layoutX="127.0" layoutY="424.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#loginUser" prefHeight="50.0" prefWidth="250.0" styleClass="loginBtu" stylesheets="@styelsheet.css" text="Login">
+            <JFXButton layoutX="127.0" layoutY="424.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#loginUser" prefHeight="50.0" prefWidth="250.0" styleClass="loginBtu" stylesheets="@../sample/styelsheet.css" text="Login">
                <font>
                   <Font name="Microsoft Tai Le Bold" size="16.0" />
                </font>

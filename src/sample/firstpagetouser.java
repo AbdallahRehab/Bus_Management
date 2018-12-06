@@ -50,7 +50,7 @@ public class firstpagetouser implements Initializable {
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         try {
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("add_client.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../View/add_client.fxml"));
             Parent root1 = (Parent) fxmlLoader.load();
             Stage stage = new Stage();
             stage.initStyle(StageStyle.UNDECORATED);
@@ -60,7 +60,7 @@ public class firstpagetouser implements Initializable {
 
         }
         try {
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("delete_client.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../View/delete_client.fxml"));
             Parent root1 = (Parent) fxmlLoader.load();
             Stage stage = new Stage();
             stage.initStyle(StageStyle.UNDECORATED);
@@ -70,7 +70,7 @@ public class firstpagetouser implements Initializable {
 
         }
         try {
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("edit_data_client.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../View/edit_data_client.fxml"));
             Parent root1 = (Parent) fxmlLoader.load();
             Stage stage = new Stage();
             stage.initStyle(StageStyle.UNDECORATED);

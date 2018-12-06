@@ -26,7 +26,7 @@ public class Controller implements Initializable {
     @FXML
     void open_registraion(MouseEvent event) {
         try {
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("Registration.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../View/Registration.fxml"));
             Parent root1 = (Parent) fxmlLoader.load();
             Stage stage = new Stage();
             stage.initStyle(StageStyle.UNDECORATED);
@@ -42,7 +42,7 @@ public class Controller implements Initializable {
     @FXML
     void loginUser(ActionEvent event) {
         try {
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("firstpagetouser.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../View/firstpagetouser.fxml"));
             Parent root1 = (Parent) fxmlLoader.load();
             Stage stage = new Stage();
             stage.initStyle(StageStyle.UNDECORATED);
@@ -66,7 +66,7 @@ public class Controller implements Initializable {
 
     public void loginmanger(ActionEvent actionEvent) {
         try {
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("signInmanger.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../View/signInmanger.fxml"));
             Parent root1 = (Parent) fxmlLoader.load();
             Stage stage = new Stage();
             stage.initStyle(StageStyle.UNDECORATED);

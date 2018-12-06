@@ -38,7 +38,7 @@ public class signInmanger implements Initializable {
     public void loginMangertoframe(ActionEvent actionEvent) {
 
         try {
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("first_page_for_manger.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../View/first_page_for_manger.fxml"));
             Parent root1 = (Parent) fxmlLoader.load();
             Stage stage = new Stage();
             stage.initStyle(StageStyle.UNDECORATED);
@@ -54,7 +54,7 @@ public class signInmanger implements Initializable {
 
     public void open_registraion_manger(MouseEvent mouseEvent) {
         try {
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("Registration_manger.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../View/Registration_manger.fxml"));
             Parent root1 = (Parent) fxmlLoader.load();
             Stage stage = new Stage();
             stage.initStyle(StageStyle.UNDECORATED);

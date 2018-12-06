@@ -22,7 +22,7 @@ public class first_page_for_manger implements Initializable {
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         try {
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("employees.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../View/employees.fxml"));
             Parent root1 = (Parent) fxmlLoader.load();
             Stage stage = new Stage();
             stage.initStyle(StageStyle.UNDECORATED);
@@ -32,7 +32,7 @@ public class first_page_for_manger implements Initializable {
             System.out.println("cant load frame allemployees");
         }
         try {
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("delete_employees.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../View/delete_employees.fxml"));
             Parent root1 = (Parent) fxmlLoader.load();
             Stage stage = new Stage();
             stage.initStyle(StageStyle.UNDECORATED);
@@ -42,7 +42,7 @@ public class first_page_for_manger implements Initializable {
 
         }
         try {
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("eidt_employees.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../View/eidt_employees.fxml"));
             Parent root1 = (Parent) fxmlLoader.load();
             Stage stage = new Stage();
             stage.initStyle(StageStyle.UNDECORATED);
@@ -56,7 +56,7 @@ public class first_page_for_manger implements Initializable {
 
     public void Buses_and_place_for_manger(ActionEvent actionEvent) {
         try {
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("Busses And Places.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../View/Busses And Places.fxml"));
             Parent root1 = (Parent) fxmlLoader.load();
             Stage stage = new Stage();
             stage.initStyle(StageStyle.UNDECORATED);
