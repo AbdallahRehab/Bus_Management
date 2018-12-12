@@ -13,10 +13,9 @@ public class user {
     private String Time_of_trip;
     private String Source;
     private String Destination;
+    private int price;
 
-    public static user currentUser;
-
-    public user(int id_user, String first_name, String last_name, String phone, String email, int num_of_seat, int bus_ID,String  date_of_trip, String time_of_trip, String source, String destination) {
+    public user(int id_user, String first_name, String last_name, String phone, String email, int num_of_seat, int bus_ID, String date_of_trip, String time_of_trip, String source, String destination, int price) {
         this.id_user = id_user;
         this.first_name = first_name;
         this.last_name = last_name;
@@ -24,11 +23,24 @@ public class user {
         this.email = email;
         this.num_of_seat = num_of_seat;
         this.bus_ID = bus_ID;
-        this.Date_of_trip = date_of_trip;
+        Date_of_trip = date_of_trip;
         Time_of_trip = time_of_trip;
         Source = source;
         Destination = destination;
+        this.price = price;
     }
+
+    public int getPrice() {
+        return price;
+    }
+
+    public void setPrice(int price) {
+        this.price = price;
+    }
+
+    public static user currentUser;
+
+
     public int getNum_of_seat() {
         return num_of_seat;
     }

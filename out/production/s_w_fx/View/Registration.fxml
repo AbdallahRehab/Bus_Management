@@ -10,11 +10,11 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="450.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Registration_manger">
+<AnchorPane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="450.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Registration">
    <children>
-      <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="450.0" style="-fx-background-color: #D0D0D0;" stylesheets="@styelsheet.css">
+      <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="450.0" style="-fx-background-color: #D0D0D0;" stylesheets="@../sample/styelsheet.css">
          <children>
-            <Label layoutX="42.0" layoutY="66.0" prefHeight="36.0" prefWidth="336.0" text="Registration Fram For Manger">
+            <Label layoutX="42.0" layoutY="66.0" prefHeight="36.0" prefWidth="214.0" text="Registration Fram">
                <font>
                   <Font name="Franklin Gothic Demi" size="24.0" />
                </font>
@@ -44,7 +44,7 @@
                   <Font size="14.0" />
                </font>
             </JFXPasswordField>
-            <JFXButton layoutX="93.0" layoutY="527.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="250.0" styleClass="loginBtu" stylesheets="@styelsheet.css" text="Register">
+            <JFXButton layoutX="93.0" layoutY="527.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="250.0" styleClass="loginBtu" stylesheets="@../sample/styelsheet.css" text="Register">
                <font>
                   <Font name="Microsoft Tai Le Bold" size="20.0" />
                </font>

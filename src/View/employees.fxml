@@ -93,6 +93,11 @@
             <Font name="System Bold" size="18.0" />
          </font>
       </Label>
-      <DatePicker layoutX="413.0" layoutY="414.0" opacity="0.85" prefHeight="38.0" prefWidth="174.0" promptText="BirthDay" />
+      <JFXTextField layoutX="421.0" layoutY="424.0" />
+      <Label layoutX="346.0" layoutY="430.0" prefHeight="17.0" prefWidth="62.0" text="   job" textAlignment="CENTER">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>

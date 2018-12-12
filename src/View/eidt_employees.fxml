@@ -99,5 +99,11 @@
             <Font name="System Bold" size="16.0" />
          </font>
       </JFXButton>
+      <JFXTextField layoutX="431.0" layoutY="517.0" />
+      <Label layoutX="356.0" layoutY="523.0" prefHeight="17.0" prefWidth="62.0" text="   job" textAlignment="CENTER">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>

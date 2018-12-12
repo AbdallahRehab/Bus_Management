@@ -33,7 +33,7 @@
             <Font name="System Bold" size="24.0" />
          </font>
       </JFXPasswordField>
-      <JFXButton layoutX="356.0" layoutY="372.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#loginMangertoframe" prefHeight="60.0" prefWidth="400.0" styleClass="loginBtuManger" stylesheets="@styelsheet.css" text="Login">
+      <JFXButton layoutX="356.0" layoutY="372.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#loginMangertoframe" prefHeight="60.0" prefWidth="400.0" styleClass="loginBtuManger" stylesheets="@../sample/styelsheet.css" text="Login">
          <font>
             <Font name="Microsoft Tai Le Bold" size="24.0" />
          </font>
@@ -49,7 +49,7 @@
             <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
          </opaqueInsets>
       </Label>
-      <Label layoutX="634.0" layoutY="439.0" styleClass="forgetBtnman" stylesheets="@styelsheet.css" text="Forget Password ?" textFill="#d0d0d0">
+      <Label layoutX="634.0" layoutY="439.0" styleClass="forgetBtnman" stylesheets="@../sample/styelsheet.css" text="Forget Password ?" textFill="#d0d0d0">
          <font>
             <Font name="Microsoft YaHei Bold" size="13.0" />
          </font>

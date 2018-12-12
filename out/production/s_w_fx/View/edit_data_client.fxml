@@ -14,7 +14,7 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" style="-fx-background-color: #D0D0D0;" stylesheets="@styelsheet.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.EditDataClientController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" style="-fx-background-color: #D0D0D0;" stylesheets="@../sample/styelsheet.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.EditDataClientController">
    <children>
       <JFXComboBox focusColor="#543fef" labelFloat="true" layoutX="399.0" layoutY="183.0" prefHeight="38.0" prefWidth="166.0" promptText="Select Source" />
       <JFXTextField focusColor="#543fef" labelFloat="true" layoutX="528.0" layoutY="32.0" prefHeight="38.0" prefWidth="166.0" promptText="ID_Card Number">
@@ -30,12 +30,12 @@
       <JFXComboBox focusColor="#543fef" labelFloat="true" layoutX="718.0" layoutY="186.0" prefHeight="38.0" prefWidth="166.0" promptText="Select destination" />
       <DatePicker layoutX="395.0" layoutY="243.0" opacity="0.85" prefHeight="38.0" prefWidth="174.0" promptText="Select Date " />
       <JFXTimePicker defaultColor="#543fef" layoutX="716.0" layoutY="241.0" prefHeight="38.0" prefWidth="171.0" />
-      <JFXButton layoutX="777.0" layoutY="541.0" prefHeight="38.0" prefWidth="91.0" styleClass="loginBtu" stylesheets="@styelsheet.css" text="Update">
+      <JFXButton layoutX="777.0" layoutY="541.0" prefHeight="38.0" prefWidth="91.0" styleClass="loginBtu" stylesheets="@../sample/styelsheet.css" text="Update">
          <font>
             <Font name="System Bold" size="16.0" />
          </font>
       </JFXButton>
-      <Pane layoutX="304.0" layoutY="310.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="225.0" prefWidth="600.0" style="-fx-background-color: #454141;">
+      <Pane layoutX="304.0" layoutY="310.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="225.0" prefWidth="600.0" style="-fx-background-color: grey;">
          <children>
             <GridPane layoutY="-1.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="225.0" prefWidth="600.0">
                <columnConstraints>
@@ -230,7 +230,7 @@
             </ImageView>
          </children>
       </Pane>
-      <JFXButton layoutX="724.0" layoutY="33.0" prefHeight="38.0" prefWidth="74.0" styleClass="loginBtu" stylesheets="@styelsheet.css" text="Search">
+      <JFXButton layoutX="724.0" layoutY="33.0" prefHeight="38.0" prefWidth="74.0" styleClass="loginBtu" stylesheets="@../sample/styelsheet.css" text="Search">
          <font>
             <Font name="System Bold" size="16.0" />
          </font>

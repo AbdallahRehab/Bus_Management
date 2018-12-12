@@ -15,6 +15,7 @@ import java.util.ResourceBundle;
 
 public class first_page_for_manger implements Initializable {
     public static Stage bus_and_place_stage;
+    public static Stage reportforclient;
     public static Stage allEmployees_in_system_FAdd_stage;
     public static Stage delete_employees_Stage;
     public static Stage edit_employees_Stage;
@@ -78,5 +79,21 @@ public class first_page_for_manger implements Initializable {
             signInmanger.firstpage_formanger.close();
             allEmployees_in_system_FAdd_stage.show();
 
+    }
+
+    public void reportforclient(ActionEvent actionEvent) {
+        try {
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../View/reportc_lient.fxml"));
+            Parent root1 = (Parent) fxmlLoader.load();
+            Stage stage = new Stage();
+            stage.initStyle(StageStyle.UNDECORATED);
+            stage.setScene(new Scene(root1));
+            stage.show();
+            reportforclient= stage;
+            signInmanger.firstpage_formanger.close();
+           reportforclient.show();
+        }catch (Exception e){
+            System.out.println("cant load frame bus and place");
+        }
     }
 }

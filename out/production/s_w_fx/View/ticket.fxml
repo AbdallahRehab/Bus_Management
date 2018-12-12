@@ -10,7 +10,7 @@
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ticketController">
    <children>
-      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="614.0" prefWidth="821.0" style="-fx-background-color: #D0D0D0;" stylesheets="@styelsheet.css">
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="614.0" prefWidth="821.0" style="-fx-background-color: #D0D0D0;" stylesheets="@../sample/styelsheet.css">
          <children>
             <JFXTextField focusColor="#543fef" labelFloat="true" layoutX="459.0" layoutY="161.0" prefHeight="38.0" prefWidth="166.0">
                <font>
@@ -22,7 +22,7 @@
                   <Font name="System Bold" size="16.0" />
                </font>
             </JFXTextField>
-            <JFXButton layoutX="633.0" layoutY="523.0" prefHeight="38.0" prefWidth="91.0" styleClass="loginBtu" stylesheets="@styelsheet.css" text="print">
+            <JFXButton layoutX="633.0" layoutY="523.0" prefHeight="38.0" prefWidth="91.0" styleClass="loginBtu" stylesheets="@../sample/styelsheet.css" text="print">
                <font>
                   <Font name="System Bold" size="16.0" />
                </font>

@@ -34,10 +34,11 @@ public class Registration implements Initializable {
         user.currentUser.getEmail();*/
         try {
             Connection connection = DBConnection.getConnection();
-            PreparedStatement statement = connection.prepareStatement("insert into user_info (First_name,Last_name,Phone) values (?,?,?)");
-            statement.setString(1,"asd");
-            statement.setString(2,"asd");
-            statement.setString(3,"asd");
+            PreparedStatement statement = connection.prepareStatement("insert into user_info (First_name,Last_name,Phone,email) values (?,?,?,?)");
+            statement.setString(1,"vvvv");
+            statement.setString(2,"lool");
+            statement.setString(3,"0123456");
+            statement.setString(4,"vbnm");
             statement.executeUpdate();
         } catch (ClassNotFoundException e) {
             e.printStackTrace();

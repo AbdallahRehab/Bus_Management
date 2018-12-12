@@ -16,26 +16,26 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" style="-fx-background-color: #D0D0D0;" stylesheets="@../sample/styelsheet.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.AddClientController">
    <children>
-      <JFXComboBox focusColor="#543fef" labelFloat="true" layoutX="393.0" layoutY="146.0" prefHeight="38.0" prefWidth="166.0" promptText="Select Source" />
-      <JFXTextField focusColor="#543fef" labelFloat="true" layoutX="733.0" layoutY="70.0" prefHeight="38.0" prefWidth="166.0" promptText="ID_Card Number">
+      <JFXComboBox fx:id="combobox_Source" focusColor="#543fef" labelFloat="true" layoutX="393.0" layoutY="146.0" prefHeight="38.0" prefWidth="166.0" promptText="Select Source" />
+      <JFXTextField fx:id="ID_Card_Number" focusColor="#543fef" labelFloat="true" layoutX="733.0" layoutY="70.0" prefHeight="38.0" prefWidth="166.0" promptText="ID_Card Number">
          <font>
             <Font name="System Bold" size="14.0" />
          </font>
       </JFXTextField>
-      <JFXTextField focusColor="#543fef" labelFloat="true" layoutX="393.0" layoutY="70.0" prefHeight="38.0" prefWidth="166.0" promptText="UserName">
+      <JFXTextField fx:id="username" focusColor="#543fef" labelFloat="true" layoutX="393.0" layoutY="70.0" prefHeight="38.0" prefWidth="166.0" promptText="UserName">
          <font>
             <Font name="System Bold" size="16.0" />
          </font>
       </JFXTextField>
-      <JFXComboBox focusColor="#543fef" labelFloat="true" layoutX="737.0" layoutY="146.0" prefHeight="38.0" prefWidth="166.0" promptText="Select destination" />
-      <DatePicker layoutX="389.0" layoutY="212.0" opacity="0.85" prefHeight="38.0" prefWidth="174.0" promptText="Select Date " />
-      <JFXTimePicker defaultColor="#543fef" layoutX="735.0" layoutY="212.0" prefHeight="38.0" prefWidth="171.0" />
+      <JFXComboBox fx:id="combobox_destination" focusColor="#543fef" labelFloat="true" layoutX="737.0" layoutY="146.0" prefHeight="38.0" prefWidth="166.0" promptText="Select destination" />
+      <DatePicker fx:id="select_date" layoutX="389.0" layoutY="212.0" opacity="0.85" prefHeight="38.0" prefWidth="174.0" promptText="Select Date " />
+      <JFXTimePicker fx:id="time" defaultColor="#543fef" layoutX="735.0" layoutY="212.0" prefHeight="38.0" prefWidth="171.0" />
       <JFXButton layoutX="777.0" layoutY="523.0" onAction="#submitblock" prefHeight="38.0" prefWidth="91.0" styleClass="loginBtu" stylesheets="@../sample/styelsheet.css" text="Submit">
          <font>
             <Font name="System Bold" size="16.0" />
          </font>
       </JFXButton>
-      <Pane layoutX="268.0" layoutY="289.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="225.0" prefWidth="600.0" style="-fx-background-color: green;">
+      <Pane layoutX="268.0" layoutY="289.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="225.0" prefWidth="600.0" style="-fx-background-color: gray;">
          <children>
             <GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="225.0" prefWidth="600.0">
                <columnConstraints>

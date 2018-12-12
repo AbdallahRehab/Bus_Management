@@ -12,62 +12,47 @@
    <children>
       <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0">
          <children>
-            <Label layoutX="39.0" layoutY="172.0" text="Buses &amp; Places">
+            <Label layoutX="88.0" layoutY="172.0" text="Buses &amp; Places">
                <font>
                   <Font name="System Bold" size="25.0" />
                </font>
             </Label>
-            <JFXButton layoutX="17.0" layoutY="214.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#Buses_and_place_for_manger" prefHeight="200.0" prefWidth="225.0" styleClass="loginBtu" stylesheets="@../sample/styelsheet.css" text=" ">
+            <JFXButton layoutX="66.0" layoutY="214.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#Buses_and_place_for_manger" prefHeight="200.0" prefWidth="225.0" styleClass="loginBtu" stylesheets="@../sample/styelsheet.css" text=" ">
                <font>
                   <Font name="Microsoft Tai Le Bold" size="20.0" />
                </font>
             </JFXButton>
-            <ImageView disable="true" fitHeight="150.0" fitWidth="200.0" layoutX="54.0" layoutY="237.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView disable="true" fitHeight="150.0" fitWidth="200.0" layoutX="103.0" layoutY="237.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../image/if_social_facebook_places_710309.png" />
                </image>
             </ImageView>
-            <Label layoutX="328.0" layoutY="172.0" text="Reports">
+            <Label layoutX="457.0" layoutY="172.0" text="Reports">
                <font>
                   <Font name="System Bold" size="25.0" />
                </font>
             </Label>
-            <JFXButton layoutX="266.0" layoutY="214.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="225.0" styleClass="loginBtu" stylesheets="@../sample/styelsheet.css" text=" ">
+            <JFXButton layoutX="395.0" layoutY="214.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#reportforclient" prefHeight="200.0" prefWidth="225.0" styleClass="loginBtu" stylesheets="@../sample/styelsheet.css" text=" ">
                <font>
                   <Font name="Microsoft Tai Le Bold" size="20.0" />
                </font>
             </JFXButton>
-            <ImageView disable="true" fitHeight="150.0" fitWidth="200.0" layoutX="303.0" layoutY="239.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView disable="true" fitHeight="150.0" fitWidth="200.0" layoutX="432.0" layoutY="239.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../image/if_chart-icon-tm_520570.png" />
                </image>
             </ImageView>
-            <Label layoutX="823.0" layoutY="169.0" text="All Users">
+            <Label layoutX="747.0" layoutY="169.0" text="All Employees">
                <font>
                   <Font name="System Bold" size="25.0" />
                </font>
             </Label>
-            <JFXButton layoutX="763.0" layoutY="214.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="225.0" styleClass="loginBtu" stylesheets="@../sample/styelsheet.css" text=" ">
+            <JFXButton layoutX="718.0" layoutY="214.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#allEmployees_add_delete_update" prefHeight="200.0" prefWidth="225.0" styleClass="loginBtu" stylesheets="@../sample/styelsheet.css" text=" ">
                <font>
                   <Font name="Microsoft Tai Le Bold" size="20.0" />
                </font>
             </JFXButton>
-            <ImageView disable="true" fitHeight="150.0" fitWidth="200.0" layoutX="800.0" layoutY="239.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../image/iconfinder_user_male2_172626.png" />
-               </image>
-            </ImageView>
-            <Label layoutX="546.0" layoutY="169.0" text="All Employees">
-               <font>
-                  <Font name="System Bold" size="25.0" />
-               </font>
-            </Label>
-            <JFXButton layoutX="517.0" layoutY="214.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#allEmployees_add_delete_update" prefHeight="200.0" prefWidth="225.0" styleClass="loginBtu" stylesheets="@../sample/styelsheet.css" text=" ">
-               <font>
-                  <Font name="Microsoft Tai Le Bold" size="20.0" />
-               </font>
-            </JFXButton>
-            <ImageView disable="true" fitHeight="150.0" fitWidth="200.0" layoutX="554.0" layoutY="239.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView disable="true" fitHeight="150.0" fitWidth="200.0" layoutX="755.0" layoutY="239.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../image/iconfinder_Manager_131484.png" />
                </image>
