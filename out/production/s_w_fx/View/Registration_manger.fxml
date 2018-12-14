@@ -24,27 +24,27 @@
                   <Font name="Gabriola" size="25.0" />
                </font>
             </Label>
-            <JFXTextField focusColor="#543fef" labelFloat="true" layoutX="91.0" layoutY="201.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="250.0" promptText="Enter UserName">
+            <JFXTextField fx:id="First_Name_For_man" focusColor="#543fef" labelFloat="true" layoutX="49.0" layoutY="209.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="160.0" promptText="Enter First_Name">
                <font>
                   <Font size="14.0" />
                </font>
             </JFXTextField>
-            <JFXTextField focusColor="#543fef" labelFloat="true" layoutX="91.0" layoutY="280.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="250.0" promptText="Email">
+            <JFXTextField fx:id="email_man" focusColor="#543fef" labelFloat="true" layoutX="91.0" layoutY="280.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="250.0" promptText="Email">
                <font>
                   <Font size="14.0" />
                </font>
             </JFXTextField>
-            <JFXPasswordField focusColor="#543fef" labelFloat="true" layoutX="93.0" layoutY="374.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="250.0" promptText="Password">
+            <JFXPasswordField fx:id="Password_man" focusColor="#543fef" labelFloat="true" layoutX="93.0" layoutY="374.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="250.0" promptText="Password">
                <font>
                   <Font size="14.0" />
                </font>
             </JFXPasswordField>
-            <JFXPasswordField focusColor="#543fef" labelFloat="true" layoutX="93.0" layoutY="460.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="250.0" promptText="Comfirm Password">
+            <JFXPasswordField fx:id="Comfirm_Password" focusColor="#543fef" labelFloat="true" layoutX="93.0" layoutY="460.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="250.0" promptText="Comfirm Password">
                <font>
                   <Font size="14.0" />
                </font>
             </JFXPasswordField>
-            <JFXButton layoutX="93.0" layoutY="527.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="250.0" styleClass="loginBtu" stylesheets="@../sample/styelsheet.css" text="Register">
+            <JFXButton layoutX="93.0" layoutY="527.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#register_man" prefHeight="50.0" prefWidth="250.0" styleClass="loginBtu" stylesheets="@../sample/styelsheet.css" text="Register">
                <font>
                   <Font name="Microsoft Tai Le Bold" size="20.0" />
                </font>
@@ -54,6 +54,11 @@
                   <Image url="@../image/if_back-alt_134226.png" />
                </image>
             </ImageView>
+            <JFXTextField fx:id="last_Name_For_man" focusColor="#543fef" labelFloat="true" layoutX="231.0" layoutY="209.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="186.0" promptText="Enter Last_Name">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXTextField>
          </children>
       </Pane>
       <ImageView fitHeight="22.0" fitWidth="21.0" layoutX="418.0" layoutY="11.0" onMouseClicked="#close_app" pickOnBounds="true" preserveRatio="true" styleClass="image_icon">

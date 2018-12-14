@@ -1,5 +1,7 @@
 package sample;
 
+import com.jfoenix.controls.JFXPasswordField;
+import com.jfoenix.controls.JFXTextField;
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -16,6 +18,8 @@ import java.net.URL;
 import java.util.ResourceBundle;
 
 public class signInmanger implements Initializable {
+    public JFXTextField email_man_login;
+    public JFXPasswordField password_man_login;
     public static Stage registMangerStage;
     public static Stage firstpage_formanger;
     @Override

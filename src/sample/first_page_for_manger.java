@@ -2,6 +2,7 @@ package sample;
 
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Parent;
@@ -15,7 +16,7 @@ import java.util.ResourceBundle;
 
 public class first_page_for_manger implements Initializable {
     public static Stage bus_and_place_stage;
-    public static Stage reportforclient;
+    public static Stage reportforclient1;
     public static Stage allEmployees_in_system_FAdd_stage;
     public static Stage delete_employees_Stage;
     public static Stage edit_employees_Stage;
@@ -80,20 +81,25 @@ public class first_page_for_manger implements Initializable {
             allEmployees_in_system_FAdd_stage.show();
 
     }
-
+@FXML
     public void reportforclient(ActionEvent actionEvent) {
         try {
+            System.out.println("dfghjk");
             FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../View/reportc_lient.fxml"));
+            System.out.println("sdf");
+
             Parent root1 = (Parent) fxmlLoader.load();
+            System.out.println("sdf");
+
             Stage stage = new Stage();
             stage.initStyle(StageStyle.UNDECORATED);
             stage.setScene(new Scene(root1));
             stage.show();
-            reportforclient= stage;
+            reportforclient1 = stage;
             signInmanger.firstpage_formanger.close();
-           reportforclient.show();
+            reportforclient1.show();
         }catch (Exception e){
-            System.out.println("cant load frame bus and place");
+            System.out.println("cant load frame report ");
         }
     }
 }

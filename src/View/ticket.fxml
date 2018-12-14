@@ -12,12 +12,12 @@
    <children>
       <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="614.0" prefWidth="821.0" style="-fx-background-color: #D0D0D0;" stylesheets="@../sample/styelsheet.css">
          <children>
-            <JFXTextField focusColor="#543fef" labelFloat="true" layoutX="459.0" layoutY="161.0" prefHeight="38.0" prefWidth="166.0">
+            <JFXTextField fx:id="username_client" focusColor="#543fef" labelFloat="true" layoutX="459.0" layoutY="161.0" prefHeight="38.0" prefWidth="166.0">
                <font>
                   <Font name="System Bold" size="14.0" />
                </font>
             </JFXTextField>
-            <JFXTextField focusColor="#543fef" labelFloat="true" layoutX="162.0" layoutY="93.0" prefHeight="38.0" prefWidth="166.0">
+            <JFXTextField fx:id="combo_Source " focusColor="#543fef" labelFloat="true" layoutX="162.0" layoutY="93.0" prefHeight="38.0" prefWidth="166.0">
                <font>
                   <Font name="System Bold" size="16.0" />
                </font>
@@ -27,22 +27,22 @@
                   <Font name="System Bold" size="16.0" />
                </font>
             </JFXButton>
-            <JFXTextField focusColor="#543fef" labelFloat="true" layoutX="169.0" layoutY="161.0" prefHeight="38.0" prefWidth="166.0">
+            <JFXTextField fx:id="combobox_destination" focusColor="#543fef" labelFloat="true" layoutX="169.0" layoutY="161.0" prefHeight="38.0" prefWidth="166.0">
                <font>
                   <Font name="System Bold" size="16.0" />
                </font>
             </JFXTextField>
-            <JFXTextField focusColor="#543fef" labelFloat="true" layoutX="169.0" layoutY="226.0" prefHeight="38.0" prefWidth="166.0">
+            <JFXTextField fx:id="select_date" focusColor="#543fef" labelFloat="true" layoutX="169.0" layoutY="226.0" prefHeight="38.0" prefWidth="166.0">
                <font>
                   <Font name="System Bold" size="14.0" />
                </font>
             </JFXTextField>
-            <JFXTextField focusColor="#543fef" labelFloat="true" layoutX="162.0" layoutY="285.0" prefHeight="38.0" prefWidth="166.0">
+            <JFXTextField fx:id="price" focusColor="#543fef" labelFloat="true" layoutX="162.0" layoutY="285.0" prefHeight="38.0" prefWidth="166.0">
                <font>
                   <Font name="System Bold" size="14.0" />
                </font>
             </JFXTextField>
-            <JFXTextField focusColor="#543fef" labelFloat="true" layoutX="162.0" layoutY="347.0" prefHeight="38.0" prefWidth="166.0">
+            <JFXTextField fx:id="num_of_seat" focusColor="#543fef" labelFloat="true" layoutX="162.0" layoutY="347.0" prefHeight="38.0" prefWidth="166.0">
                <font>
                   <Font name="System Bold" size="14.0" />
                </font>

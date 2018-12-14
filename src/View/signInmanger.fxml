@@ -23,12 +23,12 @@
             <Font name="Gabriola" size="25.0" />
          </font>
       </Label>
-      <JFXTextField focusColor="#b7b6bf" labelFloat="true" layoutX="352.0" layoutY="209.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="400.0" promptText="Email">
+      <JFXTextField fx:id="email_man_login" focusColor="#b7b6bf" labelFloat="true" layoutX="352.0" layoutY="209.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="400.0" promptText="Email">
          <font>
             <Font name="System Bold" size="24.0" />
          </font>
       </JFXTextField>
-      <JFXPasswordField focusColor="#b7b6bf" labelFloat="true" layoutX="354.0" layoutY="293.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="400.0" promptText="Password">
+      <JFXPasswordField fx:id="password_man_login" focusColor="#b7b6bf" labelFloat="true" layoutX="354.0" layoutY="293.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="400.0" promptText="Password">
          <font>
             <Font name="System Bold" size="24.0" />
          </font>

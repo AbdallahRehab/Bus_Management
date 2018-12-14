@@ -1,5 +1,6 @@
 package sample;
 
+import com.jfoenix.controls.JFXTextField;
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.Initializable;
@@ -9,6 +10,8 @@ import java.net.URL;
 import java.util.ResourceBundle;
 
 public class DeleteClientController implements Initializable {
+    public JFXTextField sarch_ID_Card_Number_delete_client;
+
     @Override
     public void initialize(URL location, ResourceBundle resources) {
 
