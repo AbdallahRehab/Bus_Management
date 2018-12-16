@@ -116,18 +116,7 @@ public class AddClientController implements Initializable {
     }
 
     public void submitblock(ActionEvent actionEvent) {
-        try {
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../View/ticket.fxml"));
-            Parent root1 = (Parent) fxmlLoader.load();
-            Stage stage = new Stage();
-            stage.initStyle(StageStyle.UNDECORATED);
-            stage.setScene(new Scene(root1));
-            stage.show();
-            blockticket = stage;
-            firstpagetouser.Addtrip.close();
-        }catch (Exception e){
-            System.out.println("can't load frame Editclient");
-        }
+
 
 
     }
@@ -300,6 +289,18 @@ public class AddClientController implements Initializable {
                 phone_Number_client.setText("");
                 time.setText("");
                 select_date.setText("");
+                try {
+                    FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../View/ticket.fxml"));
+                    Parent root1 = (Parent) fxmlLoader.load();
+                    Stage stage = new Stage();
+                    stage.initStyle(StageStyle.UNDECORATED);
+                    stage.setScene(new Scene(root1));
+                    stage.show();
+                    blockticket = stage;
+                    firstpagetouser.Addtrip.close();
+                }catch (Exception e){
+                    System.out.println("can't load frame Editclient");
+                }
 
             }
         } catch (ClassNotFoundException e) {

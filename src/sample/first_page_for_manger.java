@@ -17,6 +17,7 @@ import java.util.ResourceBundle;
 public class first_page_for_manger implements Initializable {
     public static Stage bus_and_place_stage;
     public static Stage reportforclient1;
+
     public static Stage allEmployees_in_system_FAdd_stage;
     public static Stage delete_employees_Stage;
     public static Stage edit_employees_Stage;
@@ -83,23 +84,18 @@ public class first_page_for_manger implements Initializable {
     }
 @FXML
     public void reportforclient(ActionEvent actionEvent) {
-        try {
-            System.out.println("dfghjk");
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../View/reportc_lient.fxml"));
-            System.out.println("sdf");
-
-            Parent root1 = (Parent) fxmlLoader.load();
-            System.out.println("sdf");
-
-            Stage stage = new Stage();
-            stage.initStyle(StageStyle.UNDECORATED);
-            stage.setScene(new Scene(root1));
-            stage.show();
-            reportforclient1 = stage;
-            signInmanger.firstpage_formanger.close();
-            reportforclient1.show();
-        }catch (Exception e){
-            System.out.println("cant load frame report ");
-        }
+    try {
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../View/reportc_lient.fxml"));
+        Parent root1 = (Parent) fxmlLoader.load();
+        Stage stage = new Stage();
+        stage.initStyle(StageStyle.UNDECORATED);
+        stage.setScene(new Scene(root1));
+        stage.show();
+        reportforclient1 = stage;
+        signInmanger.firstpage_formanger.close();
+        reportforclient1.show();
+    }catch (Exception e){
+        System.out.println("cant load frame bus and place");
+    }
     }
 }

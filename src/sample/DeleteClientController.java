@@ -62,7 +62,7 @@ public class DeleteClientController implements Initializable {
                 PreparedStatement statement = (PreparedStatement) connection.prepareStatement(s2);
                 System.out.println("enter pre search");
                 statement.executeUpdate();
-                showAlert(Alert.AlertType.WARNING,  "Form delete!", "delete bus!");
+                showAlert(Alert.AlertType.WARNING,  "Form delete!", "delete client!");
 
             }catch (Exception ex){
 

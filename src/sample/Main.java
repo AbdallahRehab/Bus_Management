@@ -1,5 +1,6 @@
 package sample;
 
+import com.jfoenix.controls.JFXTextField;
 import javafx.application.Application;
 import javafx.event.EventHandler;
 import javafx.fxml.FXMLLoader;
@@ -10,6 +11,7 @@ import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 
 public class Main extends Application {
+
     public static Stage sampleStage;
     private double xoffset = 0;
     private double yoffset = 0;
