@@ -2,9 +2,7 @@
 
 <?import com.jfoenix.controls.JFXButton?>
 <?import com.jfoenix.controls.JFXTextField?>
-<?import com.jfoenix.controls.JFXTimePicker?>
 <?import javafx.geometry.Insets?>
-<?import javafx.scene.control.DatePicker?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
@@ -27,12 +25,12 @@
                   </Label>
                </children>
             </HBox>
-            <Label layoutX="8.0" layoutY="68.0" prefHeight="34.0" prefWidth="100.0" text="   num_buss :" textAlignment="CENTER" textFill="WHITE">
+            <Label layoutX="8.0" layoutY="68.0" prefHeight="34.0" prefWidth="100.0" text="   num_bus :" textAlignment="CENTER" textFill="WHITE">
                <font>
                   <Font name="System Bold" size="14.0" />
                </font>
             </Label>
-            <TextField layoutX="137.0" layoutY="72.0" prefHeight="27.0" prefWidth="191.0" />
+            <TextField fx:id="num_bus_man" layoutX="137.0" layoutY="72.0" prefHeight="27.0" prefWidth="191.0" />
             <Label layoutX="6.0" layoutY="254.0" text="destination :" textFill="WHITE">
                <font>
                   <Font name="System Bold" size="16.0" />
@@ -41,11 +39,7 @@
                <font>
                   <Font name="System Bold" size="18.0" />
                </font></Label>
-            <Label layoutX="56.0" layoutY="396.0" text="time :" textFill="WHITE">
-               <font>
-                  <Font name="System Bold" size="18.0" />
-               </font></Label>
-            <Label layoutX="46.0" layoutY="486.0" text="driver :" textAlignment="CENTER" textFill="WHITE">
+            <Label layoutX="56.0" layoutY="405.0" text="time :" textFill="WHITE">
                <font>
                   <Font name="System Bold" size="18.0" />
                </font></Label>
@@ -54,22 +48,21 @@
                   <Font name="System Bold" size="16.0" />
                </font>
             </Label>
-            <TextField layoutX="137.0" layoutY="164.0" prefHeight="27.0" prefWidth="191.0" />
-            <TextField layoutX="139.0" layoutY="249.0" prefHeight="27.0" prefWidth="187.0" />
-            <TextField layoutX="151.0" layoutY="485.0" prefHeight="27.0" prefWidth="174.0" />
-            <JFXButton layoutX="64.0" layoutY="606.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="43.0" prefWidth="191.0" style="-fx-background-color: black;" styleClass="loginBtu" stylesheets="@../sample/styelsheet.css" text="ADD">
+            <TextField fx:id="source_man" layoutX="137.0" layoutY="164.0" prefHeight="27.0" prefWidth="191.0" />
+            <TextField fx:id="destination_man" layoutX="139.0" layoutY="249.0" prefHeight="27.0" prefWidth="187.0" />
+            <JFXButton layoutX="64.0" layoutY="606.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#add_bus_information" prefHeight="43.0" prefWidth="191.0" style="-fx-background-color: black;" styleClass="loginBtu" stylesheets="@../sample/styelsheet.css" text="ADD">
                <font>
                   <Font name="Arial Bold" size="22.0" />
                </font>
             </JFXButton>
-            <Label layoutX="37.0" layoutY="552.0" prefHeight="34.0" prefWidth="74.0" text="   price :" textFill="WHITE">
+            <Label layoutX="37.0" layoutY="502.0" prefHeight="34.0" prefWidth="74.0" text="   price :" textFill="WHITE">
                <font>
                   <Font name="System Bold" size="18.0" />
                </font>
             </Label>
-            <TextField layoutX="154.0" layoutY="559.0" prefHeight="27.0" prefWidth="174.0" />
-            <JFXTimePicker defaultColor="#18152f" layoutX="195.0" layoutY="391.0" prefHeight="38.0" prefWidth="125.0" />
-            <DatePicker layoutX="158.0" layoutY="316.0" opacity="0.85" prefHeight="34.0" prefWidth="167.0" promptText="Date" />
+            <TextField fx:id="price_man_add" layoutX="148.0" layoutY="505.0" prefHeight="27.0" prefWidth="174.0" />
+            <TextField fx:id="date_man_add" layoutX="139.0" layoutY="324.0" prefHeight="27.0" prefWidth="187.0" />
+            <TextField fx:id="time_man_add" layoutX="139.0" layoutY="405.0" prefHeight="27.0" prefWidth="187.0" />
          </children></Pane>
       <Pane layoutX="333.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="656.0" prefWidth="333.0" style="-fx-background-color: white;">
          <children>
@@ -82,12 +75,12 @@
                   </Label>
                </children>
             </HBox>
-            <JFXTextField alignment="CENTER" labelFloat="true" layoutX="43.0" layoutY="132.0" prefHeight="43.0" prefWidth="232.0" promptText="search whith number of buss" unFocusColor="BLACK">
+            <JFXTextField fx:id="search_with_num_of_bus_delete_man" alignment="CENTER" labelFloat="true" layoutX="43.0" layoutY="132.0" prefHeight="43.0" prefWidth="232.0" promptText="search whith number of buss" unFocusColor="BLACK">
                <font>
                   <Font name="System Bold" size="16.0" />
                </font>
             </JFXTextField>
-            <JFXButton layoutX="72.0" layoutY="244.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="43.0" prefWidth="191.0" styleClass="loginBtu" stylesheets="@../sample/styelsheet.css" text="Delete">
+            <JFXButton layoutX="72.0" layoutY="244.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#delete_bus_emp" prefHeight="43.0" prefWidth="191.0" styleClass="loginBtu" stylesheets="@../sample/styelsheet.css" text="Delete">
                <font>
                   <Font name="Arial Bold" size="22.0" />
                </font>
@@ -99,9 +92,9 @@
             </ImageView>
          </children>
       </Pane>
-      <Pane layoutX="668.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" opacity="0.82" prefHeight="656.0" prefWidth="346.0" style="-fx-background-color: #2240be;">
+      <Pane layoutX="668.0" layoutY="-2.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" opacity="0.82" prefHeight="656.0" prefWidth="346.0" style="-fx-background-color: #2240be;">
          <children>
-            <HBox alignment="CENTER" disable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="70.0" prefWidth="295.0">
+            <HBox alignment="CENTER" disable="true" layoutX="-1.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="70.0" prefWidth="295.0">
                <children>
                   <Label prefHeight="58.0" prefWidth="172.0" text="       Edit" textAlignment="CENTER" textFill="WHITE">
                      <font>
@@ -110,20 +103,13 @@
                   </Label>
                </children>
             </HBox>
-            <TextField layoutX="188.0" layoutY="100.0" />
-            <TextField layoutX="188.0" layoutY="168.0" />
-            <TextField layoutX="187.0" layoutY="235.0" />
-            <TextField layoutX="191.0" layoutY="445.0" />
-            <JFXButton layoutX="73.0" layoutY="589.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="43.0" prefWidth="191.0" style="-fx-background-color: black;" styleClass="loginBtu" stylesheets="@../sample/styelsheet.css" text="Update">
+            <TextField fx:id="source_edit_man" layoutX="188.0" layoutY="168.0" />
+            <TextField fx:id="destination_edit_man" layoutX="187.0" layoutY="235.0" />
+            <JFXButton layoutX="73.0" layoutY="600.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#update_date_bus_man" prefHeight="43.0" prefWidth="191.0" style="-fx-background-color: black;" styleClass="loginBtu" stylesheets="@../sample/styelsheet.css" text="Update">
                <font>
                   <Font name="Arial Bold" size="22.0" />
                </font>
             </JFXButton>
-            <Label layoutX="42.0" layoutY="104.0" prefHeight="25.0" prefWidth="119.0" text="   num_buss :" textAlignment="CENTER" textFill="WHITE">
-               <font>
-                  <Font name="System Bold" size="16.0" />
-               </font>
-            </Label>
             <Label layoutX="49.0" layoutY="235.0" text="destination :" textFill="WHITE">
                <font>
                   <Font name="System Bold" size="16.0" />
@@ -134,12 +120,7 @@
                   <Font name="System Bold" size="16.0" />
                </font>
             </Label>
-            <Label layoutX="97.0" layoutY="384.0" text="time :" textFill="WHITE">
-               <font>
-                  <Font name="System Bold" size="16.0" />
-               </font>
-            </Label>
-            <Label layoutX="86.0" layoutY="445.0" text="driver :" textFill="WHITE">
+            <Label layoutX="97.0" layoutY="408.0" text="time :" textFill="WHITE">
                <font>
                   <Font name="System Bold" size="16.0" />
                </font>
@@ -149,14 +130,24 @@
                   <Font name="System Bold" size="16.0" />
                </font>
             </Label>
-            <Label layoutX="84.0" layoutY="511.0" prefHeight="25.0" prefWidth="74.0" text="  price :" textFill="WHITE">
+            <Label layoutX="84.0" layoutY="501.0" prefHeight="25.0" prefWidth="74.0" text="  price :" textFill="WHITE">
                <font>
                   <Font name="System Bold" size="16.0" />
                </font>
             </Label>
-            <TextField layoutX="190.0" layoutY="511.0" />
-            <DatePicker layoutX="166.0" layoutY="309.0" opacity="0.85" prefHeight="27.0" prefWidth="174.0" promptText="Date" />
-            <JFXTimePicker defaultColor="#18152f" layoutX="231.0" layoutY="377.0" prefHeight="38.0" prefWidth="100.0" />
+            <TextField fx:id="price_edit_man" layoutX="190.0" layoutY="498.0" />
+            <JFXTextField fx:id="search_num_bus_edit_man" focusColor="BLACK" labelFloat="true" layoutX="43.0" layoutY="84.0" prefHeight="38.0" prefWidth="149.0" promptText="Enter_ num_bus_edit_man" unFocusColor="#c64545">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </JFXTextField>
+            <JFXButton layoutX="206.0" layoutY="84.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#search_for_edit_man" prefHeight="43.0" prefWidth="117.0" style="-fx-background-color: black;" styleClass="loginBtu" stylesheets="@../sample/styelsheet.css" text="Search">
+               <font>
+                  <Font name="Arial Bold" size="22.0" />
+               </font>
+            </JFXButton>
+            <TextField fx:id="date_man_edit" layoutX="187.0" layoutY="311.0" />
+            <TextField fx:id="time_man_edit" layoutX="187.0" layoutY="408.0" />
          </children>
       </Pane>
       <Pane layoutY="647.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="109.0" prefWidth="1014.0" style="-fx-background-color: #36454f;">

@@ -3,8 +3,8 @@
 <?import com.jfoenix.controls.JFXButton?>
 <?import com.jfoenix.controls.JFXComboBox?>
 <?import com.jfoenix.controls.JFXTextField?>
-<?import com.jfoenix.controls.JFXTimePicker?>
-<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -17,20 +17,18 @@
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" style="-fx-background-color: #D0D0D0;" stylesheets="@../sample/styelsheet.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.AddClientController">
    <children>
       <JFXComboBox fx:id="combobox_Source" focusColor="#543fef" labelFloat="true" layoutX="393.0" layoutY="146.0" prefHeight="38.0" prefWidth="166.0" promptText="Select Source" />
-      <JFXTextField fx:id="ID_Card_Number_client" focusColor="#543fef" labelFloat="true" layoutX="733.0" layoutY="70.0" prefHeight="38.0" prefWidth="166.0" promptText="ID_Card Number">
+      <JFXTextField fx:id="phone_Number_client" focusColor="#543fef" labelFloat="true" layoutX="735.0" layoutY="70.0" prefHeight="38.0" prefWidth="166.0" promptText="Phone_number">
          <font>
             <Font name="System Bold" size="14.0" />
          </font>
       </JFXTextField>
-      <JFXTextField fx:id="username_client" focusColor="#543fef" labelFloat="true" layoutX="393.0" layoutY="70.0" prefHeight="38.0" prefWidth="166.0" promptText="UserName">
+      <JFXTextField fx:id="firstname_client" focusColor="#543fef" labelFloat="true" layoutX="342.0" layoutY="70.0" prefHeight="38.0" prefWidth="166.0" promptText="First_Name">
          <font>
             <Font name="System Bold" size="16.0" />
          </font>
       </JFXTextField>
       <JFXComboBox fx:id="combobox_destination" focusColor="#543fef" labelFloat="true" layoutX="737.0" layoutY="146.0" prefHeight="38.0" prefWidth="166.0" promptText="Select destination" />
-      <DatePicker fx:id="select_date" layoutX="389.0" layoutY="212.0" opacity="0.85" prefHeight="38.0" prefWidth="174.0" promptText="Select Date " />
-      <JFXTimePicker fx:id="time" defaultColor="#543fef" layoutX="735.0" layoutY="212.0" prefHeight="38.0" prefWidth="171.0" />
-      <JFXButton layoutX="777.0" layoutY="523.0" onAction="#submitblock" prefHeight="38.0" prefWidth="91.0" styleClass="loginBtu" stylesheets="@../sample/styelsheet.css" text="Submit">
+      <JFXButton layoutX="777.0" layoutY="523.0" onAction="#submitblock_cilent" prefHeight="38.0" prefWidth="91.0" styleClass="loginBtu" stylesheets="@../sample/styelsheet.css" text="Submit">
          <font>
             <Font name="System Bold" size="16.0" />
          </font>
@@ -62,17 +60,17 @@
                         <Font name="System Bold" size="20.0" />
                      </font>
                   </JFXButton>
-                  <JFXButton fx:id="seat4" onAction="#click4" prefHeight="56.0" prefWidth="73.0"  text="4" GridPane.columnIndex="1">
+                  <JFXButton fx:id="seat4" onAction="#click4" prefHeight="56.0" prefWidth="73.0" text="4" GridPane.columnIndex="1">
                      <font>
                         <Font name="System Bold" size="20.0" />
                      </font>
                   </JFXButton>
-                  <JFXButton fx:id="seat7" onAction="#click7" prefHeight="56.0" prefWidth="73.0"  text="7" GridPane.columnIndex="2">
+                  <JFXButton fx:id="seat7" onAction="#click7" prefHeight="56.0" prefWidth="73.0" text="7" GridPane.columnIndex="2">
                      <font>
                         <Font name="System Bold" size="20.0" />
                      </font>
                   </JFXButton>
-                  <JFXButton fx:id="seat10" onAction="#click10" prefHeight="56.0" prefWidth="73.0"  text="10" GridPane.columnIndex="3">
+                  <JFXButton fx:id="seat10" onAction="#click10" prefHeight="56.0" prefWidth="73.0" text="10" GridPane.columnIndex="3">
                      <font>
                         <Font name="System Bold" size="20.0" />
                      </font>
@@ -92,17 +90,17 @@
                         <Font name="System Bold" size="20.0" />
                      </font>
                   </JFXButton>
-                  <JFXButton fx:id="seat8" onAction="#click8" prefHeight="56.0" prefWidth="73.0"  text="8" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                  <JFXButton fx:id="seat8" onAction="#click8" prefHeight="56.0" prefWidth="73.0" text="8" GridPane.columnIndex="2" GridPane.rowIndex="1">
                      <font>
                         <Font name="System Bold" size="20.0" />
                      </font>
                   </JFXButton>
-                  <JFXButton fx:id="seat25" onAction="#click25" prefHeight="56.0" prefWidth="73.0"  text="25" GridPane.columnIndex="9">
+                  <JFXButton fx:id="seat25" onAction="#click25" prefHeight="56.0" prefWidth="73.0" text="25" GridPane.columnIndex="9">
                      <font>
                         <Font name="System Bold" size="20.0" />
                      </font>
                   </JFXButton>
-                  <JFXButton fx:id="seat2" onAction="#click2" prefHeight="56.0" prefWidth="73.0"  text="2" GridPane.rowIndex="1">
+                  <JFXButton fx:id="seat2" onAction="#click2" prefHeight="56.0" prefWidth="73.0" text="2" GridPane.rowIndex="1">
                      <font>
                         <Font name="System Bold" size="20.0" />
                      </font>
@@ -117,7 +115,7 @@
                         <Font name="System Bold" size="20.0" />
                      </font>
                   </JFXButton>
-                  <JFXButton fx:id="seat11" onAction="#click11" prefHeight="56.0" prefWidth="73.0"  text="11" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                  <JFXButton fx:id="seat11" onAction="#click11" prefHeight="56.0" prefWidth="73.0" text="11" GridPane.columnIndex="3" GridPane.rowIndex="1">
                      <font>
                         <Font name="System Bold" size="20.0" />
                      </font>
@@ -127,7 +125,7 @@
                         <Font name="System Bold" size="20.0" />
                      </font>
                   </JFXButton>
-                  <JFXButton fx:id="seat17" onAction="#click17" prefHeight="56.0" prefWidth="73.0"  text="17" GridPane.columnIndex="5" GridPane.rowIndex="1">
+                  <JFXButton fx:id="seat17" onAction="#click17" prefHeight="56.0" prefWidth="73.0" text="17" GridPane.columnIndex="5" GridPane.rowIndex="1">
                      <font>
                         <Font name="System Bold" size="20.0" />
                      </font>
@@ -142,42 +140,42 @@
                         <Font name="System Bold" size="20.0" />
                      </font>
                   </JFXButton>
-                  <JFXButton fx:id="seat26" onAction="#click26" prefHeight="56.0" prefWidth="73.0"  text="26" GridPane.columnIndex="9" GridPane.rowIndex="1">
+                  <JFXButton fx:id="seat26" onAction="#click26" prefHeight="56.0" prefWidth="73.0" text="26" GridPane.columnIndex="9" GridPane.rowIndex="1">
                      <font>
                         <Font name="System Bold" size="20.0" />
                      </font>
                   </JFXButton>
-                  <JFXButton fx:id="seat3" onAction="#click3" prefHeight="56.0" prefWidth="73.0"  text="3" GridPane.rowIndex="3">
+                  <JFXButton fx:id="seat3" onAction="#click3" prefHeight="56.0" prefWidth="73.0" text="3" GridPane.rowIndex="3">
                      <font>
                         <Font name="System Bold" size="20.0" />
                      </font>
                   </JFXButton>
-                  <JFXButton fx:id="seat6" onAction="#click6" prefHeight="56.0" prefWidth="73.0"  text="6" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                  <JFXButton fx:id="seat6" onAction="#click6" prefHeight="56.0" prefWidth="73.0" text="6" GridPane.columnIndex="1" GridPane.rowIndex="3">
                      <font>
                         <Font name="System Bold" size="20.0" />
                      </font>
                   </JFXButton>
-                  <JFXButton fx:id="seat9" onAction="#click9" prefHeight="56.0" prefWidth="73.0"  text="9" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                  <JFXButton fx:id="seat9" onAction="#click9" prefHeight="56.0" prefWidth="73.0" text="9" GridPane.columnIndex="2" GridPane.rowIndex="3">
                      <font>
                         <Font name="System Bold" size="20.0" />
                      </font>
                   </JFXButton>
-                  <JFXButton fx:id="seat12" onAction="#click12" prefHeight="56.0" prefWidth="73.0"  text="12" GridPane.columnIndex="3" GridPane.rowIndex="3">
+                  <JFXButton fx:id="seat12" onAction="#click12" prefHeight="56.0" prefWidth="73.0" text="12" GridPane.columnIndex="3" GridPane.rowIndex="3">
                      <font>
                         <Font name="System Bold" size="20.0" />
                      </font>
                   </JFXButton>
-                  <JFXButton fx:id="seat15" onAction="#click15" prefHeight="56.0" prefWidth="73.0"  text="15" GridPane.columnIndex="4" GridPane.rowIndex="3">
+                  <JFXButton fx:id="seat15" onAction="#click15" prefHeight="56.0" prefWidth="73.0" text="15" GridPane.columnIndex="4" GridPane.rowIndex="3">
                      <font>
                         <Font name="System Bold" size="20.0" />
                      </font>
                   </JFXButton>
-                  <JFXButton fx:id="seat18" onAction="#click18" prefHeight="56.0" prefWidth="73.0"  text="18" GridPane.columnIndex="5" GridPane.rowIndex="3">
+                  <JFXButton fx:id="seat18" onAction="#click18" prefHeight="56.0" prefWidth="73.0" text="18" GridPane.columnIndex="5" GridPane.rowIndex="3">
                      <font>
                         <Font name="System Bold" size="20.0" />
                      </font>
                   </JFXButton>
-                  <JFXButton fx:id="seat21" onAction="#click21" prefHeight="56.0" prefWidth="73.0"  text="21" GridPane.columnIndex="6" GridPane.rowIndex="3">
+                  <JFXButton fx:id="seat21" onAction="#click21" prefHeight="56.0" prefWidth="73.0" text="21" GridPane.columnIndex="6" GridPane.rowIndex="3">
                      <font>
                         <Font name="System Bold" size="20.0" />
                      </font>
@@ -238,5 +236,22 @@
             <Image url="@../image/if_icons_exit_1564505.png" />
          </image>
       </ImageView>
+      <JFXTextField fx:id="lastname_client1" focusColor="#543fef" labelFloat="true" layoutX="538.0" layoutY="70.0" prefHeight="38.0" prefWidth="166.0" promptText="Last_Name">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXTextField>
+      <Label layoutX="325.0" layoutY="210.0" prefHeight="38.0" prefWidth="61.0" text="Date">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="select_date" layoutX="402.0" layoutY="213.0" prefHeight="31.0" prefWidth="156.0" />
+      <Label layoutX="676.0" layoutY="216.0" prefHeight="38.0" prefWidth="61.0" text="Time">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="time" layoutX="747.0" layoutY="219.0" prefHeight="31.0" prefWidth="156.0" />
    </children>
 </AnchorPane>

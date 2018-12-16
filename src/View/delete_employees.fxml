@@ -15,7 +15,7 @@
             <Font name="System Bold" size="20.0" />
          </font>
       </JFXTextField>
-      <JFXButton layoutX="424.0" layoutY="362.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="250.0" styleClass="loginBtu" stylesheets="@../sample/styelsheet.css" text="Delete">
+      <JFXButton layoutX="424.0" layoutY="362.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#delete_emp_man" prefHeight="50.0" prefWidth="250.0" styleClass="loginBtu" stylesheets="@../sample/styelsheet.css" text="Delete">
          <font>
             <Font name="Arial Bold" size="22.0" />
          </font>

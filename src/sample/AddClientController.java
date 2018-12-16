@@ -12,7 +12,9 @@ import javafx.fxml.Initializable;
 import javafx.geometry.Insets;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Alert;
 import javafx.scene.control.DatePicker;
+import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.Background;
 import javafx.scene.layout.BackgroundFill;
@@ -20,8 +22,13 @@ import javafx.scene.layout.CornerRadii;
 import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
+import utilities.DBConnection;
 
 import java.net.URL;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.util.ResourceBundle;
 
 public class AddClientController implements Initializable {
@@ -30,10 +37,11 @@ public class AddClientController implements Initializable {
 
     public JFXComboBox combobox_Source;
     public JFXComboBox combobox_destination;
-    public JFXTextField ID_Card_Number_client;
-    public JFXTextField username_client;
-    public DatePicker select_date;
-    public JFXTimePicker time;
+    public JFXTextField phone_Number_client;
+    public JFXTextField firstname_client;
+    public JFXTextField lastname_client1;
+    public TextField select_date;
+    public TextField time;
     public JFXButton seat1;
     public JFXButton seat2;
     public JFXButton seat3;
@@ -84,8 +92,27 @@ public class AddClientController implements Initializable {
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
+        try {
+            Connection connection = DBConnection.getConnection();
+
+                String  s2  =" select  source,destination from bus_information  ";
+                System.out.println("enter search");
+                PreparedStatement statement = (PreparedStatement) connection.prepareStatement(s2);
+                System.out.println("enter pre search");
+                ResultSet r = statement.executeQuery(s2);
+                System.out.println("enter resalt");
+                while (r.next()) {
+                    combobox_Source.getItems().add(r.getString("source"));
+                    combobox_destination.getItems().add(r.getString("destination"));
+                }
 
 
+
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
     }
 
     public void submitblock(ActionEvent actionEvent) {
@@ -252,4 +279,44 @@ public class AddClientController implements Initializable {
         seat27.setBackground(new Background(new BackgroundFill(Color.BLACK,CornerRadii.EMPTY,Insets.EMPTY)));
         seat27.setDisable(false);
         }
+
+    public void submitblock_cilent(ActionEvent actionEvent) {
+        boolean found_emp=false;
+
+        try {
+            Connection connection = DBConnection.getConnection();
+            if(!firstname_client.getText().isEmpty()
+                    &&!lastname_client1.getText().isEmpty()&&!phone_Number_client.getText().isEmpty()
+                    &&!select_date.getText().isEmpty()&&!time.getText().isEmpty()){
+
+                PreparedStatement statement =  connection.prepareStatement("insert into user_information (fitst_name,last_name,phone)values ('"+firstname_client.getText()+"','"+lastname_client1.getText()+"','"+phone_Number_client.getText()+"')");
+                found_emp=true;
+                System.out.println("sdff");
+                showAlert(Alert.AlertType.INFORMATION,  "Form ADD!", "Successfully!, ");
+
+                statement.executeUpdate();
+                firstname_client.setText("");
+                lastname_client1.setText("");
+                phone_Number_client.setText("");
+                time.setText("");
+                select_date.setText("");
+
+            }
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        if(!found_emp){
+            showAlert(Alert.AlertType.ERROR,  "Form Error!", "Please enter a password");
+        }
+    }
+    private void showAlert(Alert.AlertType alertType, String title, String message) {
+        Alert alert = new Alert(alertType);
+        alert.setTitle(title);
+        alert.setHeaderText(null);
+        alert.setContentText(message);
+
+        alert.show();
+    }
 }

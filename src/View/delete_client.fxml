@@ -10,12 +10,12 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" style="-fx-background-color: #D0D0D0;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.DeleteClientController">
    <children>
-      <JFXTextField fx:id="sarch_ID_Card_Number_delete_client" alignment="CENTER" labelFloat="true" layoutX="363.0" layoutY="165.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="350.0" promptText="Enter ID_Card Number">
+      <JFXTextField fx:id="sarch_ID_Card_Number_delete_client" alignment="CENTER" labelFloat="true" layoutX="363.0" layoutY="165.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="350.0" promptText="Enter phone Number">
          <font>
             <Font name="System Bold" size="20.0" />
          </font>
       </JFXTextField>
-      <JFXButton layoutX="424.0" layoutY="362.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="250.0" styleClass="loginBtu" stylesheets="@../sample/styelsheet.css" text="Delete">
+      <JFXButton layoutX="424.0" layoutY="362.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#delete_client" prefHeight="50.0" prefWidth="250.0" styleClass="loginBtu" stylesheets="@../sample/styelsheet.css" text="Delete">
          <font>
             <Font name="Arial Bold" size="22.0" />
          </font>

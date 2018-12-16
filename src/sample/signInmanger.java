@@ -51,6 +51,7 @@ public class signInmanger implements Initializable {
             firstpage_formanger = stage;
             Controller.MangerloginStage.close();
             firstpage_formanger.show();
+
         }catch (Exception e){
             System.out.println("cant load frame registrationStageManger");
         }
