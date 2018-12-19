@@ -30,6 +30,8 @@ public class EditDataClientController implements Initializable {
     public JFXTextField firstname_client;
     public JFXTextField lastname_client1;
     public TextField select_date;
+    @FXML
+    private TextField seat_edit_user;
     public TextField time;
     public JFXButton seat1;
     public JFXButton seat2;
@@ -113,29 +115,84 @@ public class EditDataClientController implements Initializable {
 
     public void update_date_client(ActionEvent actionEvent) {
         boolean found_emp=false;
-
         try {
             Connection connection = DBConnection.getConnection();
+
+
+            String  s2  =" select number_of_seat from user_information where number_of_seat=?";
+
+            System.out.println("enter search");
+            PreparedStatement statement1 = (PreparedStatement) connection.prepareStatement(s2);
+            statement1.setString(1,seat_edit_user.getText());
+
+
+            System.out.println("enter pre search");
+            ResultSet r = statement1.executeQuery();
+            System.out.println("enter resalt");
+
+            if(r.next()){
+                showAlert(Alert.AlertType.ERROR,  "Form Error!", "Please seat is block");
+
+            }
+            else {
+
+        try {
             if(!firstname_client.getText().isEmpty()
                     &&!lastname_client1.getText().isEmpty()){
-                PreparedStatement statement =  connection.prepareStatement("update user_information set fitst_name='"+firstname_client.getText()+"',last_name='"+lastname_client1.getText()+"' where phone='"+phone_Number_client.getText()+"'");
+                PreparedStatement statement =  connection.prepareStatement("update user_information set fitst_name='"+firstname_client.getText()+"',last_name='"+lastname_client1.getText()+"',number_of_seat='"+seat_edit_user.getText()+"' where phone='"+phone_Number_client.getText()+"'");
                 found_emp=true;
                 System.out.println("sdff");
                 showAlert(Alert.AlertType.INFORMATION,  "Form update!", "Successfully!, ");
 
                 statement.executeUpdate();
+//                rest all seat
+                seat1.setBackground(new Background(new BackgroundFill(Color.GRAY,CornerRadii.EMPTY,Insets.EMPTY)));
+                seat2.setBackground(new Background(new BackgroundFill(Color.GRAY,CornerRadii.EMPTY,Insets.EMPTY)));
+                seat3.setBackground(new Background(new BackgroundFill(Color.GRAY,CornerRadii.EMPTY,Insets.EMPTY)));
+                seat4.setBackground(new Background(new BackgroundFill(Color.GRAY,CornerRadii.EMPTY,Insets.EMPTY)));
+                seat5.setBackground(new Background(new BackgroundFill(Color.GRAY,CornerRadii.EMPTY,Insets.EMPTY)));
+                seat6.setBackground(new Background(new BackgroundFill(Color.GRAY,CornerRadii.EMPTY,Insets.EMPTY)));
+                seat7.setBackground(new Background(new BackgroundFill(Color.GRAY,CornerRadii.EMPTY,Insets.EMPTY)));
+                seat8.setBackground(new Background(new BackgroundFill(Color.GRAY,CornerRadii.EMPTY,Insets.EMPTY)));
+                seat9.setBackground(new Background(new BackgroundFill(Color.GRAY,CornerRadii.EMPTY,Insets.EMPTY)));
+                seat10.setBackground(new Background(new BackgroundFill(Color.GRAY,CornerRadii.EMPTY,Insets.EMPTY)));
+                seat11.setBackground(new Background(new BackgroundFill(Color.GRAY,CornerRadii.EMPTY,Insets.EMPTY)));
+                seat12.setBackground(new Background(new BackgroundFill(Color.GRAY,CornerRadii.EMPTY,Insets.EMPTY)));
+                seat13.setBackground(new Background(new BackgroundFill(Color.GRAY,CornerRadii.EMPTY,Insets.EMPTY)));
+                seat14.setBackground(new Background(new BackgroundFill(Color.GRAY,CornerRadii.EMPTY,Insets.EMPTY)));
+                seat15.setBackground(new Background(new BackgroundFill(Color.GRAY,CornerRadii.EMPTY,Insets.EMPTY)));
+                seat16.setBackground(new Background(new BackgroundFill(Color.GRAY,CornerRadii.EMPTY,Insets.EMPTY)));
+                seat17.setBackground(new Background(new BackgroundFill(Color.GRAY,CornerRadii.EMPTY,Insets.EMPTY)));
+                seat18.setBackground(new Background(new BackgroundFill(Color.GRAY,CornerRadii.EMPTY,Insets.EMPTY)));
+                seat19.setBackground(new Background(new BackgroundFill(Color.GRAY,CornerRadii.EMPTY,Insets.EMPTY)));
+                seat20.setBackground(new Background(new BackgroundFill(Color.GRAY,CornerRadii.EMPTY,Insets.EMPTY)));
+                seat21.setBackground(new Background(new BackgroundFill(Color.GRAY,CornerRadii.EMPTY,Insets.EMPTY)));
+                seat22.setBackground(new Background(new BackgroundFill(Color.GRAY,CornerRadii.EMPTY,Insets.EMPTY)));
+                seat23.setBackground(new Background(new BackgroundFill(Color.GRAY,CornerRadii.EMPTY,Insets.EMPTY)));
+                seat24.setBackground(new Background(new BackgroundFill(Color.GRAY,CornerRadii.EMPTY,Insets.EMPTY)));
+                seat25.setBackground(new Background(new BackgroundFill(Color.GRAY,CornerRadii.EMPTY,Insets.EMPTY)));
+                seat26.setBackground(new Background(new BackgroundFill(Color.GRAY,CornerRadii.EMPTY,Insets.EMPTY)));
+                seat27.setBackground(new Background(new BackgroundFill(Color.GRAY,CornerRadii.EMPTY,Insets.EMPTY)));
+
+//                fun search of new seat
+                 search_client();
                 firstname_client.setText("");
                 lastname_client1.setText("");
+                seat_edit_user.setText("");
 
 
             }
-        } catch (ClassNotFoundException e) {
-            e.printStackTrace();
         } catch (SQLException e) {
             e.printStackTrace();
         }
         if(!found_emp){
             showAlert(Alert.AlertType.ERROR,  "Form Error!", "Please check fields");
+        }
+            }
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        } catch (SQLException e) {
+            e.printStackTrace();
         }
     }
     private void showAlert(Alert.AlertType alertType, String title, String message) {
@@ -146,170 +203,8 @@ public class EditDataClientController implements Initializable {
 
         alert.show();
     }
-    @FXML
-    void seat1(ActionEvent event) {
-        seat1.setBackground(new Background(new BackgroundFill(Color.BLACK,CornerRadii.EMPTY,Insets.EMPTY)));
-        seat1.setDisable(false);
 
-    }
-
-    @FXML
-    void seat10(ActionEvent event) {
-        seat10.setBackground(new Background(new BackgroundFill(Color.BLACK,CornerRadii.EMPTY,Insets.EMPTY)));
-        seat10.setDisable(false);
-    }
-
-    @FXML
-    void seat11(ActionEvent event) {
-        seat11.setBackground(new Background(new BackgroundFill(Color.BLACK,CornerRadii.EMPTY,Insets.EMPTY)));
-        seat11.setDisable(false);
-    }
-
-    @FXML
-    void seat12(ActionEvent event) {
-        seat12.setBackground(new Background(new BackgroundFill(Color.BLACK,CornerRadii.EMPTY,Insets.EMPTY)));
-        seat12.setDisable(false);
-    }
-
-    @FXML
-    void seat13(ActionEvent event) {
-        seat13.setBackground(new Background(new BackgroundFill(Color.BLACK,CornerRadii.EMPTY,Insets.EMPTY)));
-        seat13.setDisable(false);
-    }
-
-    @FXML
-    void seat14(ActionEvent event) {
-        seat14.setBackground(new Background(new BackgroundFill(Color.BLACK,CornerRadii.EMPTY,Insets.EMPTY)));
-        seat14.setDisable(false);
-    }
-
-    @FXML
-    void seat15(ActionEvent event) {
-        seat15.setBackground(new Background(new BackgroundFill(Color.BLACK,CornerRadii.EMPTY,Insets.EMPTY)));
-        seat15.setDisable(false);
-    }
-
-    @FXML
-    void seat16(ActionEvent event) {
-        seat16.setBackground(new Background(new BackgroundFill(Color.BLACK,CornerRadii.EMPTY,Insets.EMPTY)));
-        seat16.setDisable(false);
-    }
-
-    @FXML
-    void seat17(ActionEvent event) {
-        seat17.setBackground(new Background(new BackgroundFill(Color.BLACK,CornerRadii.EMPTY,Insets.EMPTY)));
-        seat17.setDisable(false);
-    }
-
-    @FXML
-    void seat18(ActionEvent event) {
-        seat18.setBackground(new Background(new BackgroundFill(Color.BLACK,CornerRadii.EMPTY,Insets.EMPTY)));
-        seat18.setDisable(false);
-    }
-
-    @FXML
-    void seat19(ActionEvent event) {
-        seat19.setBackground(new Background(new BackgroundFill(Color.BLACK,CornerRadii.EMPTY,Insets.EMPTY)));
-        seat19.setDisable(false);
-    }
-
-    @FXML
-    void seat2(ActionEvent event) {
-        seat2.setBackground(new Background(new BackgroundFill(Color.BLACK,CornerRadii.EMPTY,Insets.EMPTY)));
-        seat2.setDisable(false);
-    }
-
-    @FXML
-    void seat20(ActionEvent event) {
-        seat20.setBackground(new Background(new BackgroundFill(Color.BLACK,CornerRadii.EMPTY,Insets.EMPTY)));
-        seat20.setDisable(false);
-    }
-
-    @FXML
-    void seat21(ActionEvent event) {
-        seat21.setBackground(new Background(new BackgroundFill(Color.BLACK,CornerRadii.EMPTY,Insets.EMPTY)));
-        seat21.setDisable(false);
-    }
-
-    @FXML
-    void seat22(ActionEvent event) {
-        seat22.setBackground(new Background(new BackgroundFill(Color.BLACK,CornerRadii.EMPTY,Insets.EMPTY)));
-        seat22.setDisable(false);
-    }
-
-    @FXML
-    void seat23(ActionEvent event) {
-        seat23.setBackground(new Background(new BackgroundFill(Color.BLACK,CornerRadii.EMPTY,Insets.EMPTY)));
-        seat23.setDisable(false);
-    }
-
-    @FXML
-    void seat24(ActionEvent event) {
-        seat24.setBackground(new Background(new BackgroundFill(Color.BLACK,CornerRadii.EMPTY,Insets.EMPTY)));
-        seat24.setDisable(false);
-    }
-
-    @FXML
-    void seat25(ActionEvent event) {
-        seat25.setBackground(new Background(new BackgroundFill(Color.BLACK,CornerRadii.EMPTY,Insets.EMPTY)));
-        seat25.setDisable(false);
-    }
-
-    @FXML
-    void seat26(ActionEvent event) {
-        seat26.setBackground(new Background(new BackgroundFill(Color.BLACK,CornerRadii.EMPTY,Insets.EMPTY)));
-        seat26.setDisable(false);
-    }
-
-    @FXML
-    void seat27(ActionEvent event) {
-        seat27.setBackground(new Background(new BackgroundFill(Color.BLACK,CornerRadii.EMPTY,Insets.EMPTY)));
-        seat27.setDisable(false);
-    }
-
-    @FXML
-    void seat3(ActionEvent event) {
-        seat3.setBackground(new Background(new BackgroundFill(Color.BLACK,CornerRadii.EMPTY,Insets.EMPTY)));
-        seat3.setDisable(false);
-    }
-
-    @FXML
-    void seat4(ActionEvent event) {
-        seat4.setBackground(new Background(new BackgroundFill(Color.BLACK,CornerRadii.EMPTY,Insets.EMPTY)));
-        seat4.setDisable(false);
-    }
-
-    @FXML
-    void seat5(ActionEvent event) {
-        seat5.setBackground(new Background(new BackgroundFill(Color.BLACK,CornerRadii.EMPTY,Insets.EMPTY)));
-        seat5.setDisable(false);
-    }
-
-    @FXML
-    void seat6(ActionEvent event) {
-        seat6.setBackground(new Background(new BackgroundFill(Color.BLACK,CornerRadii.EMPTY,Insets.EMPTY)));
-        seat6.setDisable(false);
-    }
-
-    @FXML
-    void seat7(ActionEvent event) {
-        seat7.setBackground(new Background(new BackgroundFill(Color.BLACK,CornerRadii.EMPTY,Insets.EMPTY)));
-        seat7.setDisable(false);
-    }
-
-    @FXML
-    void seat8(ActionEvent event) {
-        seat8.setBackground(new Background(new BackgroundFill(Color.BLACK,CornerRadii.EMPTY,Insets.EMPTY)));
-        seat8.setDisable(false);
-    }
-
-    @FXML
-    void seat9(ActionEvent event) {
-        seat9.setBackground(new Background(new BackgroundFill(Color.BLACK,CornerRadii.EMPTY,Insets.EMPTY)));
-        seat9.setDisable(false);
-    }
-
-    public void search_client(ActionEvent actionEvent) {
+    public void search_client() {
         try {
             Connection connection = DBConnection.getConnection();
             try {
@@ -480,6 +375,140 @@ public class EditDataClientController implements Initializable {
         } catch (SQLException e) {
             e.printStackTrace();
         }
+
+    }
+    @FXML
+    void seat1(ActionEvent event) {
+
+    }
+
+    @FXML
+    void seat10(ActionEvent event) {
+
+    }
+
+    @FXML
+    void seat11(ActionEvent event) {
+
+    }
+
+    @FXML
+    void seat12(ActionEvent event) {
+
+    }
+
+    @FXML
+    void seat13(ActionEvent event) {
+
+    }
+
+    @FXML
+    void seat14(ActionEvent event) {
+
+    }
+
+    @FXML
+    void seat15(ActionEvent event) {
+
+    }
+
+    @FXML
+    void seat16(ActionEvent event) {
+
+    }
+
+    @FXML
+    void seat17(ActionEvent event) {
+
+    }
+
+    @FXML
+    void seat18(ActionEvent event) {
+
+    }
+
+    @FXML
+    void seat19(ActionEvent event) {
+
+    }
+
+    @FXML
+    void seat2(ActionEvent event) {
+
+    }
+
+    @FXML
+    void seat20(ActionEvent event) {
+
+    }
+
+    @FXML
+    void seat21(ActionEvent event) {
+
+    }
+
+    @FXML
+    void seat22(ActionEvent event) {
+
+    }
+
+    @FXML
+    void seat23(ActionEvent event) {
+
+    }
+
+    @FXML
+    void seat24(ActionEvent event) {
+
+    }
+
+    @FXML
+    void seat25(ActionEvent event) {
+
+    }
+
+    @FXML
+    void seat26(ActionEvent event) {
+
+    }
+
+    @FXML
+    void seat27(ActionEvent event) {
+
+    }
+
+    @FXML
+    void seat3(ActionEvent event) {
+
+    }
+
+    @FXML
+    void seat4(ActionEvent event) {
+
+    }
+
+    @FXML
+    void seat5(ActionEvent event) {
+
+    }
+
+    @FXML
+    void seat6(ActionEvent event) {
+
+    }
+
+    @FXML
+    void seat7(ActionEvent event) {
+
+    }
+
+    @FXML
+    void seat8(ActionEvent event) {
+
+    }
+
+    @FXML
+    void seat9(ActionEvent event) {
 
     }
 }

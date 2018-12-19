@@ -10,8 +10,12 @@ import javafx.scene.Scene;
 import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
+import utilities.DBConnection;
 
 import java.net.URL;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
 import java.util.ResourceBundle;
 
 public class firstpagetouser implements Initializable {
@@ -79,6 +83,21 @@ public class firstpagetouser implements Initializable {
         } catch (Exception e) {
 
         }
+//        Connection connection = null;
+//        try {
+//            connection = DBConnection.getConnection();
+//            String  s2  =" delete from user_information";
+//            System.out.println("enter search");
+//            PreparedStatement statement = (PreparedStatement) connection.prepareStatement(s2);
+//            System.out.println("enter pre search");
+//            statement.executeUpdate();
+//        } catch (ClassNotFoundException e) {
+//            e.printStackTrace();
+//        } catch (SQLException e) {
+//            e.printStackTrace();
+//        }
+
+
     }
 
 
