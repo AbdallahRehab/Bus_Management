@@ -25,6 +25,8 @@ public class reportc_Lient implements Initializable {
     @FXML
     private JFXTextField search_numbus;
     @FXML
+    private JFXTextField total_cost;
+    @FXML
     private TableView<user> table;
     @FXML
     private TableColumn<user, Integer> us;
@@ -44,19 +46,24 @@ public class reportc_Lient implements Initializable {
     @FXML
     private TableColumn<user, String> d;
 
+    @FXML
+    private TableColumn<user,String> pr;
+
     ObservableList<user> infouser=FXCollections.observableArrayList();
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         try {
             Connection connection=DBConnection.getConnection();
 
-            PreparedStatement statement=connection.prepareStatement("select us.user_id , us.fitst_name,us.last_name,us.phone,bu.source,bu.destination from bus_information bu inner join user_information us on us.user_id=bu.bus_id  ");
+            PreparedStatement statement=connection.prepareStatement("select us.user_id , us.fitst_name,us.last_name,us.phone,bu.source,bu.destination,bu.price from bus_information bu inner join user_information us on us.user_id=bu.bus_id  ");
 
             ResultSet re=null;
             re=statement.executeQuery();
+
+
             while (re.next()){
             infouser.addAll(new user(re.getInt(1),re.getString(2),re.getString(3),re.getString(4)
-            ,re.getString(5),re.getString(6)));
+            ,re.getString(5),re.getString(6),re.getString(7)));
             }
         us.setCellValueFactory(new PropertyValueFactory<user,Integer>("ID_User"));
         f.setCellValueFactory(new PropertyValueFactory<user,String>("First_name"));
@@ -64,7 +71,10 @@ public class reportc_Lient implements Initializable {
         p.setCellValueFactory(new PropertyValueFactory<user,String>("phone"));
         s.setCellValueFactory(new PropertyValueFactory<user,String>("Source"));
         d.setCellValueFactory(new PropertyValueFactory<user,String>("Destination"));
-table.setItems(infouser);
+        pr.setCellValueFactory(new PropertyValueFactory<user,String>("price"));
+
+        table.setItems(infouser);
+
 
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
@@ -81,5 +91,10 @@ table.setItems(infouser);
 
     public void close_app(MouseEvent mouseEvent) {
         Platform.exit();
+    }
+
+    public void onBackClicked(MouseEvent mouseEvent) {
+        first_page_for_manger.reportforclient1.close();
+        signInmanger.firstpage_formanger.show();
     }
 }

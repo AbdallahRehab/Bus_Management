@@ -11,14 +11,16 @@ public class user {
 
     private String Source;
     private String Destination;
+    private String price;
 
-    public user(int ID_User, String first_name, String last_name, String phone, String source, String destination) {
+    public user(int ID_User, String first_name, String last_name, String phone, String source, String destination, String price) {
         this.ID_User = ID_User;
         First_name = first_name;
         Last_name = last_name;
         this.phone = phone;
         Source = source;
         Destination = destination;
+        this.price = price;
     }
 
     public int getID_User() {
@@ -67,5 +69,13 @@ public class user {
 
     public void setDestination(String destination) {
         Destination = destination;
+    }
+
+    public String getPrice() {
+        return price;
+    }
+
+    public void setPrice(String price) {
+        this.price = price;
     }
 }
