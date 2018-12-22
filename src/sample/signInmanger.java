@@ -53,7 +53,7 @@ public class signInmanger implements Initializable {
             if(!email_man_login.getText().isEmpty()
                     &&!password_man_login.getText().isEmpty()){
                 try {
-                    String s2 = " select user_name,password from loging where user_name=? and password=?  ";
+                    String s2 = " select user_name,password from logingm where user_name=? and password=?  ";
 
 
                     System.out.println("enter search");

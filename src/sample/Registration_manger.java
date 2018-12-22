@@ -43,7 +43,7 @@ public class Registration_manger implements Initializable {
             if(!First_Name_For_man.getText().isEmpty()&&!last_Name_For_man.getText().isEmpty()&&!email_man.getText().isEmpty()
                     &&!Password_man.getText().isEmpty()&&!Comfirm_Password.getText().isEmpty()){
 //            String s ="insert into loging (first_name,last_name,user_name,password)values ('"+First_Name_For_emp.getText()+"','"+last_Name_For_emp.getText()+"','"+email_emp.getText()+"','"+Comfirm_Password.getText()"')";
-                PreparedStatement statement =  connection.prepareStatement("insert into loging (first_name,last_name,user_name,password)values ('"+First_Name_For_man.getText()+"','"+last_Name_For_man.getText()+"','"+email_man.getText()+"','"+Comfirm_Password.getText()+"')");
+                PreparedStatement statement =  connection.prepareStatement("insert into logingm (first_name,last_name,user_name,password)values ('"+First_Name_For_man.getText()+"','"+last_Name_For_man.getText()+"','"+email_man.getText()+"','"+Comfirm_Password.getText()+"')");
                 found_emp=true;
                 System.out.println("sdff");
                 statement.executeUpdate();

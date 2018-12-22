@@ -55,7 +55,7 @@ public class ticketController implements Initializable {
         try {
             Connection connection = DBConnection.getConnection();
 
-            String  s2  =" select price from bus_information where source=? and destination=?";
+            String  s2  ="select price from bus_information where source=? and destination=?";
 
             System.out.println("enter search");
             PreparedStatement statement = (PreparedStatement) connection.prepareStatement(s2);
@@ -64,10 +64,11 @@ public class ticketController implements Initializable {
 
             System.out.println("enter pre search");
             ResultSet r = statement.executeQuery();
-            System.out.println("enter resalt");
+            System.out.println("enter resalttttttttttttttttttttt");
 
             if(r.next()){
-                price.setText(r.getString(1));
+            System.out.println(r.getString("price"));
+                price.setText(r.getString("price"));
             }
 
 

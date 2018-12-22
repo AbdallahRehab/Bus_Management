@@ -12,7 +12,7 @@
    <children>
       <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="614.0" prefWidth="821.0" style="-fx-background-color: #D0D0D0;" stylesheets="@../sample/styelsheet.css">
          <children>
-            <JFXTextField fx:id="combobox_destination" focusColor="#543fef" labelFloat="true" layoutX="459.0" layoutY="161.0" prefHeight="38.0" prefWidth="166.0">
+            <JFXTextField fx:id="combobox_destination" disable="true" focusColor="#543fef" labelFloat="true" layoutX="459.0" layoutY="161.0" prefHeight="38.0" prefWidth="166.0">
                <font>
                   <Font name="System Bold" size="14.0" />
                </font>
@@ -23,22 +23,22 @@
                   <Font name="System Bold" size="16.0" />
                </font>
             </JFXButton>
-            <JFXTextField fx:id="combobox_source" focusColor="#543fef" labelFloat="true" layoutX="169.0" layoutY="161.0" prefHeight="38.0" prefWidth="166.0">
+            <JFXTextField fx:id="combobox_source" disable="true" focusColor="#543fef" labelFloat="true" layoutX="169.0" layoutY="161.0" prefHeight="38.0" prefWidth="166.0">
                <font>
                   <Font name="System Bold" size="16.0" />
                </font>
             </JFXTextField>
-            <JFXTextField fx:id="select_date" focusColor="#543fef" labelFloat="true" layoutX="169.0" layoutY="226.0" prefHeight="38.0" prefWidth="166.0">
+            <JFXTextField fx:id="select_date" disable="true" focusColor="#543fef" labelFloat="true" layoutX="169.0" layoutY="226.0" prefHeight="38.0" prefWidth="166.0">
                <font>
                   <Font name="System Bold" size="14.0" />
                </font>
             </JFXTextField>
-            <JFXTextField fx:id="price" focusColor="#543fef" labelFloat="true" layoutX="162.0" layoutY="285.0" prefHeight="38.0" prefWidth="166.0">
+            <JFXTextField fx:id="price" disable="true" focusColor="#543fef" labelFloat="true" layoutX="162.0" layoutY="285.0" prefHeight="38.0" prefWidth="166.0">
                <font>
                   <Font name="System Bold" size="14.0" />
                </font>
             </JFXTextField>
-            <JFXTextField fx:id="num_of_seat" focusColor="#543fef" labelFloat="true" layoutX="162.0" layoutY="347.0" prefHeight="38.0" prefWidth="166.0">
+            <JFXTextField fx:id="num_of_seat" disable="true" focusColor="#543fef" labelFloat="true" layoutX="162.0" layoutY="347.0" prefHeight="38.0" prefWidth="166.0">
                <font>
                   <Font name="System Bold" size="14.0" />
                </font>
@@ -79,11 +79,16 @@
                   <Image url="@../image/if_icons_exit_1564505.png" />
                </image>
             </ImageView>
-            <JFXTextField fx:id="name_client" focusColor="#543fef" labelFloat="true" layoutX="125.0" layoutY="99.0" prefHeight="38.0" prefWidth="352.0">
+            <JFXTextField fx:id="name_client" disable="true" focusColor="#543fef" labelFloat="true" layoutX="125.0" layoutY="100.0" prefHeight="38.0" prefWidth="352.0">
                <font>
                   <Font name="System Bold" size="14.0" />
                </font>
             </JFXTextField>
+            <Label layoutX="290.0" layoutY="16.0" prefHeight="70.0" prefWidth="317.0" text="YOUR TICKET" textFill="#7e75e1">
+               <font>
+                  <Font name="System Bold" size="48.0" />
+               </font>
+            </Label>
          </children>
       </AnchorPane>
    </children>

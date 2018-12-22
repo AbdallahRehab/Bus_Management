@@ -100,6 +100,10 @@ public JFXPasswordField password_emp_login;
                 }
 
             }
+            else{
+                showAlert(Alert.AlertType.ERROR,  "Form Error!", "username & password are require ");
+            }
+
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
         } catch (SQLException e) {
