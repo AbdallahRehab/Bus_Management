@@ -203,12 +203,12 @@
             </JFXButton>
             <JFXButton alignment="CENTER" layoutY="500.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#BackMainStage" prefHeight="100.0" prefWidth="125.0" text=" " textAlignment="CENTER" />
             <JFXButton layoutX="125.0" layoutY="500.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#logoutfromaccount" prefHeight="100.0" prefWidth="125.0" text=" " />
-            <ImageView disable="true" fitHeight="81.0" fitWidth="74.0" layoutX="151.0" layoutY="629.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="81.0" fitWidth="74.0" layoutX="151.0" layoutY="631.0" onMouseClicked="#logoutfromaccount" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../image/if_log-out_3324993.png" />
                </image>
             </ImageView>
-            <ImageView disable="true" fitHeight="90.0" fitWidth="95.0" layoutX="31.0" layoutY="623.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="90.0" fitWidth="95.0" layoutX="31.0" layoutY="623.0" onMouseClicked="#BackMainStage" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../image/if_arrow-back_216437.png" />
                </image>

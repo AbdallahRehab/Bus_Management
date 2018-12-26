@@ -83,7 +83,7 @@ public class BussesAndPlacesController implements Initializable {
             e.printStackTrace();
         }
         if(!found_emp){
-            showAlert(Alert.AlertType.ERROR,  "Form Error!", "Please enter a password");
+            showAlert(Alert.AlertType.ERROR,  "Form Error!", "Please enter data of bus ");
         }
     }
     private void showAlert(Alert.AlertType alertType, String title, String message) {

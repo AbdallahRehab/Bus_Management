@@ -10,6 +10,7 @@ import javafx.fxml.Initializable;
 import javafx.geometry.Insets;
 import javafx.scene.control.Alert;
 import javafx.scene.control.TextField;
+import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.Background;
 import javafx.scene.layout.BackgroundFill;
 import javafx.scene.layout.CornerRadii;
@@ -89,12 +90,12 @@ public class EditDataClientController implements Initializable {
 
     }
 
-    public void BackMainStage(ActionEvent actionEvent) {
+    public void BackMainStage(MouseEvent actionEvent) {
         firstpagetouser.Eidttrip.close();
         Controller.LoginUserStage.show();
     }
 
-    public void logoutfromaccount(ActionEvent actionEvent) {
+    public void logoutfromaccount(MouseEvent actionEvent) {
         firstpagetouser.Eidttrip.close();
         Main.sampleStage.show();
     }
